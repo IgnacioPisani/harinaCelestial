@@ -1,8 +1,11 @@
 import styled from 'styled-components';
-import ImgBg from '../../images/hero-harina_celestial-con_harinas-HD.png';
+import ImgBg from '../../images/hero-harina_celestial-con_marca-2.png';
 
 export const HeroContainer = styled.div`
-	background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)),
+	// background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)),
+	// 	url(${ImgBg});
+	
+	background: linear-gradient(to right, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.02)), 
 		url(${ImgBg});
 	height: 100vh;
 	background-position: center;
