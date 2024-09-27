@@ -19,16 +19,16 @@ function Hero() {
 
 	return (
 		<HeroContainer>
-			<NavBar toggle={toggle} />
+			{/* <NavBar toggle={toggle} />
 			<Sidebar isOpen={isOpen} toggle={toggle} />
 			<HeroContent>
 				<HeroItems>
 					<HeroH1>G2M</HeroH1>
-					<h2>celestial</h2>
+					<h2>celestial</h2> 
 					<HeroP>Insumo panadería</HeroP>
-					{/* <HeroBtn>Place Order</HeroBtn> */}
+					<HeroBtn>Place Order</HeroBtn>
 				</HeroItems>
-			</HeroContent>
+			</HeroContent> */}
 		</HeroContainer>
 	);
 }
