@@ -1,6 +1,7 @@
 import React from 'react';
 import { FeatureContainer, FeatureButton } from './FeatureElements';
 
+// Push preuba
 function Feature() {
 	return (
 		<FeatureContainer>
