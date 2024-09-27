@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import ImgBg from '../../images/hero-harina_celestial.png';
+import ImgBg from '../../images/hero-harina_celestial-con_harinas.png';
 
 export const HeroContainer = styled.div`
 	background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)),
@@ -36,6 +36,13 @@ export const HeroItems = styled.div`
 `;
 
 export const HeroH1 = styled.h1`
+	font-size: clamp(2.5rem, 10vw, 5rem);
+	margin-bottom: 1rem;
+	box-shadow: 3px 5px #e9ba23;
+	letter-spacing: 3px;
+`;
+
+export const HeroH3 = styled.h3`
 	font-size: clamp(2.5rem, 10vw, 5rem);
 	margin-bottom: 1rem;
 	box-shadow: 3px 5px #e9ba23;
