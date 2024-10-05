@@ -13,7 +13,12 @@ export const ProductsImg = styled.img`
 `;
 
 export const ProductsHeading = styled.h1`
+  text-align: center; 
+  color: #FF8806; 
+  font-size: 7rem; 
+  margin-bottom: 20px;  
 `;
+
 
 export const ProductsTitle = styled.h2`
 `;

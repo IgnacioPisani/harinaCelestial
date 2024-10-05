@@ -9,28 +9,15 @@ const Carousel = ({ data }) => {
     dots: true,
     infinite: true,
     speed: 700,
-    slidesToShow: 4,  // Número de productos visibles por defecto
+    slidesToShow: 3,  // Número de productos visibles por defecto
     slidesToScroll: 1,
     autoplay: true,
+    centerMode: true,
     autoplaySpeed: 4000,
     pauseOnHover: true,
     responsive: [
       {
-        breakpoint: 1024, // A partir de 1024px o menos
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
-        }
-      },
-      {
-        breakpoint: 768, // A partir de 768px o menos (tabletas)
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-        }
-      },
-      {
-        breakpoint: 480, // A partir de 480px o menos (móviles)
+        breakpoint: 768, 
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -45,7 +32,6 @@ const Carousel = ({ data }) => {
         {data.map((product, index) => (
           <div key={index} className="product-card">
             <img src={product.img} alt={product.alt} />
-            <h3>{product.name}</h3>
           </div>
         ))}
       </Slider>
