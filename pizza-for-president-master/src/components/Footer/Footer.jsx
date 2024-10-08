@@ -1,10 +1,7 @@
 import React from 'react';
 import {
-	FaFacebook,
 	FaInstagram,
-	FaYoutube,
-	FaTwitter,
-	FaLinkedin,
+	FaWhatsapp,
 } from 'react-icons/fa';
 import {
 	FooterContainer,
@@ -14,7 +11,10 @@ import {
 	SocialLogo,
 	SocialIcons,
 	SocialIconLink,
+	SocialImage,
+	SocialImageDiv,
 } from './FooterElements';
+import logo from '../../images/g2m.png';
 
 function Footer() {
 	return (
@@ -22,16 +22,11 @@ function Footer() {
 			<FooterWrap>
 				<SocialMedia>
 					<SocialMediaWrap>
-						<SocialLogo to='/'>Pizza</SocialLogo>
-						<SocialIcons>
-							<SocialIconLink
-								href='/'
-								target='_blank'
-								aria-label='Facebook'
-								rel='noopener noreferrer'
-							>
-								<FaFacebook />
-							</SocialIconLink>
+						<SocialImageDiv>
+					<SocialImage src={logo}/>
+					</SocialImageDiv>
+					<SocialIcons>
+						<h1>Contactos:</h1>
 							<SocialIconLink
 								href='/'
 								target='_blank'
@@ -43,27 +38,13 @@ function Footer() {
 							<SocialIconLink
 								href='/'
 								target='_blank'
-								aria-label='YouTube'
+								aria-label='Whatsapp'
 								rel='noopener noreferrer'
 							>
-								<FaYoutube />
+								<FaWhatsapp />
 							</SocialIconLink>
-							<SocialIconLink
-								href='/'
-								target='_blank'
-								aria-label='Twitter'
-								rel='noopener noreferrer'
-							>
-								<FaTwitter />
-							</SocialIconLink>
-							<SocialIconLink
-								href='/'
-								target='_blank'
-								aria-label='Linkedin'
-								rel='noopener noreferrer'
-							>
-								<FaLinkedin />
-							</SocialIconLink>
+						
+						
 						</SocialIcons>
 					</SocialMediaWrap>
 				</SocialMedia>

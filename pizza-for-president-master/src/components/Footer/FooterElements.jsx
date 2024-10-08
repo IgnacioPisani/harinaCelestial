@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 export const FooterContainer = styled.footer`
-	background-color: #0d0909;
+	background-color: #ff8806;
 `;
 
 export const FooterWrap = styled.div`
@@ -43,15 +43,25 @@ export const SocialLogo = styled(Link)`
 	margin-bottom: 16px;
 	font-weight: bold;
 `;
+export const SocialImageDiv = styled.div`
+    width: 30%;
+`;
+export const SocialImage = styled.img`
+	display: block; /* Cambiado a block para que ocupe todo el ancho disponible */
+	margin-left: 0; /* Asegura que no haya margen izquierdo */
+	margin-right: auto; /* Empuja el margen derecho para alinear a la izquierda */
+	width: 200px; /* Ancho fijo para la imagen */
+`;
 
 export const SocialIcons = styled.div`
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	width: 240px;
+    display: flex;
+    flex-direction: column; /* Cambiado a columna para que el título esté encima de los iconos */
+    align-items: flex-end; /* Alinea los iconos a la derecha */
+    width: 70%; 
+    margin-left: auto; /* Asegura que se empuje a la derecha */
 `;
 
 export const SocialIconLink = styled.a`
-	color: #fff;
-	font-size: 24px;
+    color: #fff;
+    font-size: 60px; /* Mantén el tamaño según lo necesites */
 `;
