@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const ProductsContainer = styled.div`
+	background:#f4f4f4;
 `;
 
 export const ProductsWrapper = styled.div`
