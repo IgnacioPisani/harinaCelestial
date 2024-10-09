@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
 export const BrandsContainer = styled.div`
-	min-height: 100vh;
+	min-height: 80vh;
 	padding: 5rem calc((100vw - 1300px) / 2);
-	background: #f4f4f4;
+	background:#f4f4f4;
 	color: #000;
 `;
 
@@ -21,7 +21,6 @@ export const BrandCard = styled.div`
 	width: 350px;
 	height:  350px;
 	border-radius: 10px; /* Bordes redondeados en la tarjeta */
-	background: #fff;
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 	border: 4px solid #fd8b06; /* Borde de color naranja */
 	transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -30,6 +29,7 @@ export const BrandCard = styled.div`
 	&:hover {
 		transform: scale(1.05);
 		box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+		background: #fd8b06; /* Color de fondo naranja en hover */
 	}
 `;
 
