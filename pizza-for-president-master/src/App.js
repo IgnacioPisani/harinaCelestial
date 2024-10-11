@@ -14,7 +14,7 @@ function App() {
 		<Router>
 			<GlobalStyle />
 			<Hero />
-			<Products heading='Productos industriales' data={productData} />
+			<Products heading='Productos Industriales' data={productData} />
 			<Feature />
 			<Brands heading='Nuestras Marcas' brands={brandData} />
 			<Footer />

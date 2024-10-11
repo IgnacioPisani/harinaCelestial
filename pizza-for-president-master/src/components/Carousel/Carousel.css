@@ -1,0 +1,82 @@
+.carousel {
+  width: 95%; /* Asegura que el carrusel ocupe casi todo el ancho del contenedor */
+  margin: 0 auto; /* Centra el carrusel */
+  padding: 2rem 0; /* Espacio alrededor del carrusel */
+}
+
+.product-card {
+  background: #fff; /* Fondo blanco para las tarjetas */
+  border-radius: 10px; /* Bordes redondeados */
+  overflow: hidden; /* Oculta el desbordamiento */
+  transition: transform 0.3s, opacity 0.5s ease-in-out; /* Transición suave para efectos */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra los elementos */
+  padding: 1rem; /* Espacio interno */
+  text-align: center; /* Centra el texto */
+  opacity: 0.5; /* Opacidad por defecto */
+  transform: scale(0.9); /* Escala reducida por defecto */
+}
+
+.product-card img {
+  display: block;
+  margin: 0 auto; /* Centra horizontalmente la imagen */
+  height: auto;
+  max-height: 700px;
+  max-width: 100%;
+  width: auto;
+  object-fit: contain;
+}
+
+.product-card h3 {
+  font-size: 1.5rem; /* Tamaño de fuente para el nombre del producto */
+  color: #333; /* Color del texto */
+  margin: 1rem 0; /* Margen superior e inferior */
+}
+
+.slick-center .product-card {
+  transform: scale(1.2); /* Aumenta la escala del producto central */
+  opacity: 1; /* El producto central tiene opacidad completa */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Más sombra para el producto central */
+}
+
+.slick-dots {
+  bottom: -30px; /* Ajusta la posición de los puntos */
+}
+
+.slick-dots li button:before {
+  font-size: 12px; /* Tamaño de los puntos */
+  color: #ccc; /* Color de los puntos inactivos */
+}
+
+.slick-dots li.slick-active button:before {
+  color: #FD8103; /* Color de los puntos activos */
+}
+
+.carousel .slick-arrow {
+  z-index: 1; /* Asegura que las flechas estén por encima de las imágenes */
+  width: 30px; /* Ancho de las flechas */
+  height: 30px; /* Alto de las flechas */
+}
+
+.carousel .slick-prev, .carousel .slick-next {
+  background-color: transparent; /* Fondo transparente */
+  border: none; /* Sin borde */
+}
+
+.carousel .slick-prev {
+  left: 10px; /* Posición de la flecha izquierda */
+}
+
+.carousel .slick-next {
+  right: 10px; /* Posición de la flecha derecha */
+}
+
+.carousel .slick-prev:before, .carousel .slick-next:before {
+  font-size: 50px; /* Ajusta el tamaño de la flecha */
+  color: #FD8103; /* Color de la flecha */
+}
+
+.carousel .slick-prev:hover:before, .carousel .slick-next:hover:before {
+  color: #b35b04; /* Cambia el color al pasar el ratón */
+}

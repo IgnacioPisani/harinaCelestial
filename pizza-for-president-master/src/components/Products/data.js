@@ -1,31 +1,44 @@
 
-import product1 from '../../images/product-1.jpg';
-import product2 from '../../images/product-2.jpg';
-import product3 from '../../images/product-3.jpg';
+import tripleCero from '../../images/triple-0.png';
+import tripleCeroPreparada from '../../images/triple-0-preparada.png';
+import tripleCeroPremium from '../../images/triple-0-premium.png';
+import tripleCeroPlus from '../../images/triple-0-plus.png';
+import cuatroCero from '../../images/cuatro-0.png';
+
+
 
 export const productData = [
 	{
-		img: product1,
-		alt: 'Pizza',
-		name: 'Supreme Pizza',
-		desc: 'Marinara sauce, basil, italian sausage, roma tomatoes, olives, and pesto',
-		price: 'Ksh 1000',
-		button: 'Add to Cart',
+		img: tripleCero,
+		alt: 'Harina',
+		name: 'Harina 000',
 	},
 	{
-		img: product2,
-		alt: 'Pizza',
-		name: 'Hawaiian Paradise',
-		desc: ' Marinara sauce, basil, italian sausage, roma tomatoes, olives, and pesto',
-		price: 'Ksh 700',
-		button: 'Add to Cart',
+		img: tripleCeroPreparada,
+		alt: 'Harina',
+		name: 'Harina 000 Preparada',
 	},
 	{
-		img: product3,
-		alt: 'Pizza',
-		name: 'Veggie Overload',
-		desc: ' Marinara sauce, basil, italian sausage, roma tomatoes, olives, and pesto',
-		price: 'Ksh 500',
-		button: 'Add to Cart',
+		img: tripleCeroPremium,
+		alt: 'Harina',
+		name: 'Harina 000 Premium',
 	},
+	{
+		img: tripleCeroPlus,
+		alt: 'Harina',
+		name: 'Harina 000 Plus',
+	},
+	{
+		img: cuatroCero,
+		alt: 'Harina',
+		name: 'Harina 0000',
+	},
+	
+];
+
+export const productDataTwo = [
+	{
+		
+	}
+
 ];
