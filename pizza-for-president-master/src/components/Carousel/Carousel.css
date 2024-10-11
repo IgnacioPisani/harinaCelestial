@@ -37,7 +37,6 @@
 .slick-center .product-card {
   transform: scale(1.2); /* Aumenta la escala del producto central */
   opacity: 1; /* El producto central tiene opacidad completa */
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Más sombra para el producto central */
 }
 
 .slick-dots {
