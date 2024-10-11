@@ -1,17 +1,19 @@
 import React from 'react';
+import Logo from '../../images/g2m.png'
 import {
 	FaFacebook,
 	FaInstagram,
 	FaYoutube,
 	FaTwitter,
 	FaLinkedin,
+	FaWhatsapp,
 } from 'react-icons/fa';
 import {
 	FooterContainer,
 	FooterWrap,
 	SocialMedia,
 	SocialMediaWrap,
-	SocialLogo,
+	SocialLogoImage,
 	SocialIcons,
 	SocialIconLink,
 } from './FooterElements';
@@ -22,47 +24,25 @@ function Footer() {
 			<FooterWrap>
 				<SocialMedia>
 					<SocialMediaWrap>
-						<SocialLogo to='/'>Pizza</SocialLogo>
+					<SocialLogoImage >
+							<img src={Logo} alt='Logo' />
+						</SocialLogoImage>						
 						<SocialIcons>
 							<SocialIconLink
-								href='/'
+								href='https://api.whatsapp.com/send/?phone=5493515165078&text&type=phone_number&app_absent=0'
 								target='_blank'
-								aria-label='Facebook'
+								aria-label='Whatsapp'
 								rel='noopener noreferrer'
 							>
-								<FaFacebook />
+								<FaWhatsapp />
 							</SocialIconLink>
 							<SocialIconLink
-								href='/'
+								href='https://www.instagram.com/g2m.celestial/'
 								target='_blank'
 								aria-label='Instagram'
 								rel='noopener noreferrer'
 							>
 								<FaInstagram />
-							</SocialIconLink>
-							<SocialIconLink
-								href='/'
-								target='_blank'
-								aria-label='YouTube'
-								rel='noopener noreferrer'
-							>
-								<FaYoutube />
-							</SocialIconLink>
-							<SocialIconLink
-								href='/'
-								target='_blank'
-								aria-label='Twitter'
-								rel='noopener noreferrer'
-							>
-								<FaTwitter />
-							</SocialIconLink>
-							<SocialIconLink
-								href='/'
-								target='_blank'
-								aria-label='Linkedin'
-								rel='noopener noreferrer'
-							>
-								<FaLinkedin />
 							</SocialIconLink>
 						</SocialIcons>
 					</SocialMediaWrap>

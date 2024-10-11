@@ -22,11 +22,12 @@ function Hero() {
 			<NavBar toggle={toggle} />
 			<Sidebar isOpen={isOpen} toggle={toggle} />
 			<HeroContent>
-				<HeroItems>
-					<HeroH1>Greatest Pizza Ever</HeroH1>
-					<HeroP>Ready in 60 seconds</HeroP>
+				{/* <HeroItems>
+					<HeroH1>G2M</HeroH1>
+					<h2>celestial</h2> 
+					<HeroP>Insumo panadería</HeroP>
 					<HeroBtn>Place Order</HeroBtn>
-				</HeroItems>
+				</HeroItems> */}
 			</HeroContent>
 		</HeroContainer>
 	);

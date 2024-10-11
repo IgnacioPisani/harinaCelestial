@@ -48,6 +48,7 @@ export const ProductsInfo = styled.div`
 	text-align: center;
 `;
 
+
 export const ProductsDesc = styled.p`
 	margin-bottom: 1rem;
 `;
