@@ -27,6 +27,7 @@ export const ProductsTitle = styled.h2`
 export const ProductsInfo = styled.div`
 `;
 
+
 export const ProductsDesc = styled.p`
 	margin-bottom: 1rem;
 `;
