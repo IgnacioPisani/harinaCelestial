@@ -1,5 +1,26 @@
 import styled from 'styled-components';
 
+
+export const BrandsHeading = styled.h1`
+  text-align: center; 
+  color: #FF8806; 
+  font-size: 7rem; 
+  margin-bottom: 120px;  
+    @media (max-width: 1200px) {
+    font-size: 6rem;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 5rem;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 4rem;
+  }
+`;
+
+
+
 export const BrandsContainer = styled.div`
 	min-height: 80vh;
 	padding: 5rem calc((100vw - 1300px) / 2);
@@ -58,11 +79,4 @@ export const BrandName = styled.h2`
 	margin-bottom: 0.5rem;
 	color: #000;
 	text-align: center; /* Centra el texto */
-`;
-
-export const BrandsHeading = styled.h1`
-  text-align: center; 
-  color: #FF8806; 
-  font-size: 7rem; 
-  margin-bottom: 120px;  
 `;

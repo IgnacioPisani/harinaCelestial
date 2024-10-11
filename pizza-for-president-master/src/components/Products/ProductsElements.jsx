@@ -17,7 +17,18 @@ export const ProductsHeading = styled.h1`
   text-align: center; 
   color: #FF8806; 
   font-size: 7rem; 
-  margin-bottom: 20px;  
+  margin-bottom: 20px; 
+    @media (max-width: 1200px) {
+    font-size: 6rem;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 5rem;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 4rem;
+  } 
 `;
 
 
