@@ -1,16 +1,43 @@
 import styled from 'styled-components';
-import ImgBg from '../../images/hero-harina_celestial-con_marca-2.png';
+import ImgBg from '../../images/hero/hero-harina-industrial.jpg';
+import ImgLogo from '../../images/logo-g2m/g2m-solido.png';
 
 export const HeroContainer = styled.div`
-	// background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)),
-	// 	url(${ImgBg});
-	
-	background: linear-gradient(to right, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.02)), 
+		
+	background: linear-gradient(to right, rgba(255, 255, 255, 0.45), rgba(0, 0, 0, 0.02)), 
 		url(${ImgBg});
 	height: 100vh;
 	background-position: center;
 	background-size: cover;
+	position: relative;
+	z-index: 1;
 `;
+
+export const Logo = styled.img.attrs({
+	src: ImgLogo,
+	alt: "Logo de G2M"
+})`
+   position: absolute;
+   top: 38%; /* Adjust this value to set spacing from the top */
+   left: 8%; /* Adjust this value to set spacing from the left */
+   transform: translateY(-50%); /* Centra verticalmente el logo */
+   width: 450px; /* Set the size of the logo */
+   height: auto;
+   filter: drop-shadow(0px 4px 5px rgba(0, 0, 0, 0.5));
+   z-index: 10; /* Ensures it appears above other elements */   
+`;
+
+// export const Logo = styled.img.attrs({
+// 	src: ImgLogo,
+// 	alt: "Logo de G2M"
+// })`
+//    position: absolute;
+//    top: 20px; /* Adjust this value to set spacing from the top */
+//    left: 20px; /* Adjust this value to set spacing from the left */
+//    width: 100px; /* Set the size of the logo */
+//    height: auto;
+//    z-index: 10; /* Ensures it appears above other elements */
+// `;
 
 export const HeroContent = styled.div`
 	height: calc(100vh-80px);
@@ -55,6 +82,7 @@ export const HeroH3 = styled.h3`
 export const HeroP = styled.p`
 	font-size: clamp(2rem, 2.5vw, 3rem);
 	margin-bottom: 2rem;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 1.2);
 `;
 
 export const HeroBtn = styled.button`

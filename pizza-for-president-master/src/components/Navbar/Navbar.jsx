@@ -1,21 +1,44 @@
 import React from 'react';
-import { Bars, Nav, NavIcon } from './NavbarElements';
-import { NavLink } from 'react-router-dom';
+import { Bars, Nav, NavIcon, Logo, NavLinksContainer, NavLink } from './NavbarElements';
+// import { NavLink } from 'react-router-dom';
 
 
 function NavBar({ toggle }) {
 	return (
 		<>
 			<Nav>
+				<Logo />
+				
 				{/* <NavLink to='/'>Pizza</NavLink> */}
-				<NavIcon onClick={toggle}>
-				<NavLink to='/'>Menu</NavLink>
-				<NavLink to='/about'>About Us</NavLink>
-					<Bars />
-				</NavIcon>
+				<NavLinksContainer>
+					<NavIcon onClick={toggle}>
+					<NavLink to='/'>Menu</NavLink>
+					</NavIcon>
+				</NavLinksContainer>
+				<NavLinksContainer>
+					<NavIcon >
+					<NavLink to='/about'>Sobre Nosotros</NavLink>
+					</NavIcon>
+				</NavLinksContainer>
+				
+				{/* <Bars /> */}
 			</Nav>
 		</>
 	);
 }
 
 export default NavBar;
+
+// function Navbar() {
+// 	return (
+// 	  <nav style={{ backgroundColor: 'orange', padding: '10px' }}>
+// 		<ul style={{ listStyleType: 'none', display: 'flex', gap: '20px', margin: 0 }}>
+// 		  <li><a href="#inicio" style={{ color: 'white', textDecoration: 'none' }}>Inicio</a></li>
+// 		  <li><a href="#marcas" style={{ color: 'white', textDecoration: 'none' }}>Marcas</a></li>
+// 		  <li><a href="#nosotros" style={{ color: 'white', textDecoration: 'none' }}>Nosotros</a></li>
+// 		</ul>
+// 	  </nav>
+// 	);
+//   }
+  
+//   export default Navbar;
