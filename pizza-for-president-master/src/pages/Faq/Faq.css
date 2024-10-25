@@ -1,0 +1,73 @@
+.faq {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 40px;
+    background: #f4f4f4;
+    box-sizing: border-box;
+    min-height: 90vh; /* Asegura que ocupe toda la pantalla */
+}
+
+.faq-title {
+    color: #FF8806;
+    font-size: 5rem;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.faq-item {
+    width: 100%;
+    padding: 20px;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s ease;
+}
+
+.faq-item:hover {
+    background-color: #f0f0f0;
+}
+
+.faq-question {
+    color: #FF8806;
+    font-size: 3rem;
+    margin: 0;
+}
+
+.faq-answer {
+    font-size: 2rem;
+    color: #333;
+    padding: 0; /* Sin padding inicial */
+    max-height: 0; /* Comienza oculto */
+    overflow: hidden; /* Oculta el contenido excedente */
+    transition: max-height 0.4s ease, padding 0.4s ease; /* Añade transición */
+}
+
+/* Mostrar la respuesta cuando se abra la pregunta */
+.faq-item.open .faq-answer {
+    display: block; /* Mostrar la respuesta cuando esté abierta */
+    padding: 15px 0; /* Añadir padding al abrir */
+    max-height: none; /* Permitir que la respuesta ocupe todo el espacio necesario */
+}
+
+/* Media Query para pantallas pequeñas */
+@media (max-width: 768px) {
+    .faq-answer {
+        display: block; /* Asegura que se muestre cuando se abra */
+        max-height: none; /* Permitir que se muestre completamente */
+    }
+}
+
+@media (max-width: 480px) {
+    .faq-title {
+        font-size: 3rem;
+    }
+
+    .faq-question {
+        font-size: 2rem;
+    }
+
+    .faq-answer {
+        font-size: 1.6rem;
+    }
+}

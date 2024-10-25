@@ -3,6 +3,8 @@ import { GlobalStyle } from './globalStyles';
 import Home from './pages/Home/Home'; // Importa Home desde su archivo correspondiente
 import Footer from './components/Footer/Footer';
 import AboutUs from './pages/AboutUs/AboutUs';
+import Faq from './pages/Faq/Faq';
+
 
 function App() {
 	return (
@@ -16,6 +18,8 @@ function App() {
 				<Route path="/about" element={<AboutUs/>} />
 				
 				{/* Puedes agregar más rutas aquí */}
+
+				<Route path="/Faq" element={<Faq/>} />
 			</Routes>
 			<Footer />
 		</Router>

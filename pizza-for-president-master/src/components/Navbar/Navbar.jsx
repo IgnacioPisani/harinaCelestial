@@ -11,6 +11,7 @@ function NavBar({ toggle }) {
 				<NavIcon onClick={toggle}>
 				<NavLink to='/'>Menu</NavLink>
 				<NavLink to='/about'>About Us</NavLink>
+				<NavLink to='/faq'>Faq</NavLink>
 					<Bars />
 				</NavIcon>
 			</Nav>
