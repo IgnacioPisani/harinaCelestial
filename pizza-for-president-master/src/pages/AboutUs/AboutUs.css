@@ -8,7 +8,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 100vh; /* Ocupa toda la altura de la pantalla */
+  height: 100vh;
   padding: 40px;
   background: #f4f4f4;
   box-sizing: border-box;
@@ -31,65 +31,85 @@
 
 .about-us-text h2 {
   color: #FF8806;
-  font-size: 8rem;
+  font-size: 5rem;
   text-align: center;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 .about-us-text p {
   font-size: 3rem;
+  padding: 0 20px; /* Espacio comprimido en los costados */
 }
 
 /* Alinear el texto según la imagen */
 .left .about-us-text {
-  text-align: left;
+  text-align: center;
   margin-right: 20px;
 }
 
 .right .about-us-text {
-  text-align: right;
+  text-align: center;
   margin-left: 20px;
 }
 
 .about-us-image {
   flex: 1;
-  width: 45%; /* Reduce el ancho de las imágenes para mejor ajuste */
-  max-height: 70vh; /* Limita la altura máxima de las imágenes */
+  width: 45%;
+  max-height: 70vh;
   object-fit: cover;
   border-radius: 10px;
 }
 
 .left {
-  flex-direction: row; /* Texto a la izquierda, imagen a la derecha */
+  flex-direction: row;
 }
 
 .right {
-  flex-direction: row-reverse; /* Imagen a la izquierda, texto a la derecha */
+  flex-direction: row-reverse;
 }
 
-/* Media Queries para pantallas pequeñas */
+/* Media Queries para pantallas medianas */
 @media (max-width: 768px) {
   .about-us-section {
     flex-direction: column;
     text-align: center;
+    height: auto; /* Ajusta la altura automáticamente */
+    padding: 20px;
   }
 
-  .about-us-text {
-    margin: 0;
-    text-align: center;
+  .about-us-text h2 {
+    font-size: 4rem;
+  }
+
+  .about-us-text p {
+    font-size: 2.5rem;
+    padding: 0 15px; /* Espacio más comprimido en pantallas medianas */
   }
 
   .about-us-image {
-    width: 100%;
+    width: 80%;
+    margin: 20px 0;
   }
 }
 
+/* Media Queries para pantallas pequeñas */
 @media (max-width: 480px) {
   .about-us-text h2 {
     font-size: 3rem;
+    padding-bottom: 10px;
   }
 
   .about-us-text p {
     font-size: 2rem;
+    padding: 0 10px; /* Espacio aún más comprimido en pantallas pequeñas */
+  }
+
+  .about-us-section {
+    padding: 15px;
+  }
+
+  .about-us-image {
+    width: 100%;
+    margin: 15px 0;
   }
 }
