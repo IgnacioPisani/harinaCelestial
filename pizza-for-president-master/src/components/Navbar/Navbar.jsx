@@ -1,5 +1,7 @@
 import React from 'react';
-import { Bars, Nav, NavIcon, NavLink } from './NavbarElements';
+import { Bars, Nav, NavIcon } from './NavbarElements';
+import { NavLink } from 'react-router-dom';
+
 
 function NavBar({ toggle }) {
 	return (
@@ -7,7 +9,8 @@ function NavBar({ toggle }) {
 			<Nav>
 				{/* <NavLink to='/'>Pizza</NavLink> */}
 				<NavIcon onClick={toggle}>
-					<p>Menu</p>
+				<NavLink to='/'>Menu</NavLink>
+				<NavLink to='/about'>About Us</NavLink>
 					<Bars />
 				</NavIcon>
 			</Nav>

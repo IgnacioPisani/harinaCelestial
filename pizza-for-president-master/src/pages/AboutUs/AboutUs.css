@@ -1,0 +1,95 @@
+.about-us {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.about-us-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh; /* Ocupa toda la altura de la pantalla */
+  padding: 40px;
+  background: #f4f4f4;
+  box-sizing: border-box;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* Añade la clase cuando la sección esté en el viewport */
+.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.about-us-text {
+  flex: 1;
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.about-us-text h2 {
+  color: #FF8806;
+  font-size: 8rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.about-us-text p {
+  font-size: 3rem;
+}
+
+/* Alinear el texto según la imagen */
+.left .about-us-text {
+  text-align: left;
+  margin-right: 20px;
+}
+
+.right .about-us-text {
+  text-align: right;
+  margin-left: 20px;
+}
+
+.about-us-image {
+  flex: 1;
+  width: 45%; /* Reduce el ancho de las imágenes para mejor ajuste */
+  max-height: 70vh; /* Limita la altura máxima de las imágenes */
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.left {
+  flex-direction: row; /* Texto a la izquierda, imagen a la derecha */
+}
+
+.right {
+  flex-direction: row-reverse; /* Imagen a la izquierda, texto a la derecha */
+}
+
+/* Media Queries para pantallas pequeñas */
+@media (max-width: 768px) {
+  .about-us-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-us-text {
+    margin: 0;
+    text-align: center;
+  }
+
+  .about-us-image {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-us-text h2 {
+    font-size: 3rem;
+  }
+
+  .about-us-text p {
+    font-size: 2rem;
+  }
+}
