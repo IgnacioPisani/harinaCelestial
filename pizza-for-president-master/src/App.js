@@ -1,22 +1,22 @@
-import { BrowserRouter as Router } from 'react-router-dom';
-import Hero from './components/Hero/Hero';
-import Products from './components/Products/Products';
-import Brands from './components/Brands/Brands';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { GlobalStyle } from './globalStyles';
-import { productData, productDataTwo } from './components/Products/data';
-import { brandData } from './components/Brands/data';
-import Feature from './components/Feature/Feature';
+import Home from './pages/Home/Home'; // Importa Home desde su archivo correspondiente
 import Footer from './components/Footer/Footer';
-
+import AboutUs from './pages/AboutUs/AboutUs';
 
 function App() {
 	return (
 		<Router>
 			<GlobalStyle />
-			<Hero />
-			<Products heading='Productos Industriales' data={productData} />
-			<Feature />
-			<Brands heading='Nuestras Marcas' brands={brandData} />
+			<Routes>
+				{/* Ruta principal con el componente Home */}
+				<Route exact path="/" element={<Home />} />
+				
+				{/* Otra ruta sin los elementos de Home */}
+				<Route path="/about" element={<AboutUs/>} />
+				
+				{/* Puedes agregar más rutas aquí */}
+			</Routes>
 			<Footer />
 		</Router>
 	);
