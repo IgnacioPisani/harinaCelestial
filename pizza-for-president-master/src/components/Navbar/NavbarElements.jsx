@@ -13,7 +13,7 @@ export const Nav = styled.nav`
 	align-items: center;
 	position: sticky;
 	top: 0;
-	font-weight: 600;
+	// font-weight: 600;
 	z-index: 20;
 `;
 
@@ -31,50 +31,55 @@ export const Logo = styled.img.attrs({
    
 `;
 
-// export const NavLink = styled(Link)`
-// 	// color: #fff;
-// 	// font-size: 2rem;
-// 	// display: flex;
-// 	// align-items: left;
-// 	// text-decoration: none;
-// 	// cursor: pointer;
-// 	// transition: color 0.3s ease, background-color 0.3s ease; /* Transición suave */
-// 	// &:hover {
-// 	// 	color: #000; /* Cambia el color al pasar el ratón */
-// 	// 	background-color: rgba(255, 255, 255, 0.2); /* Fondo suave en hover */
-// 	// 	border-radius: 5px; /* Bordes redondeados */
-// 	// }
-// `;
-
-export const NavLink = styled.div`
+export const NavLink = styled(Link)`
 	color: #fff;
-	font-size: 2rem;
+	font-size: 1.5rem;
 	display: flex;
 	align-items: left;
 	text-decoration: none;
 	cursor: pointer;
+	font-weight: 530;
 	transition: color 0.3s ease, background-color 0.3s ease; /* Transición suave */
+	padding: 4px 5px; /* Añade espacio para aumentar el ancho del fondo */
 	&:hover {
-		color: #000; /* Cambia el color al pasar el ratón */
+		// color: #d3d3d3; /* Cambia el color del texto a un gris claro en hover */
+		color: #f0f0f0; /* Un gris muy claro */
+		// color: #000; /* Cambia el color al pasar el ratón */
 		background-color: rgba(255, 255, 255, 0.2); /* Fondo suave en hover */
-		border-radius: 5px; /* Bordes redondeados */
+		border-radius: 6px; /* Bordes redondeados */
+		font-weight: 570;
 	}
 `;
-export const NavLinksContainer = styled.div`
-    display: flex;
-	align-items: left;
-	margin: 0px 5px
-	color: #ffff;
-    font-size: 1.4rem;
-    text-decoration: none; /* Elimina el subrayado */
-    cursor: pointer;
-    transition: color 0.3s ease, background-color 0.3s ease; /* Transición suave */
-    &:hover {
-        color: #000; /* Cambia el color al pasar el ratón */
-        background-color: rgba(255, 255, 255, 0.2); /* Fondo suave en hover */
-        border-radius: 5px; /* Bordes redondeados */
-    }
-`;
+
+// export const NavLink = styled.div`
+// 	color: #fff;
+// 	font-size: 2rem;
+// 	display: flex;
+// 	align-items: left;
+// 	text-decoration: none;
+// 	cursor: pointer;
+// 	transition: color 0.3s ease, background-color 0.3s ease; /* Transición suave */
+// 	&:hover {
+// 		color: #000; /* Cambia el color al pasar el ratón */
+// 		background-color: rgba(255, 255, 255, 0.2); /* Fondo suave en hover */
+// 		border-radius: 5px; /* Bordes redondeados */
+// 	}
+// `;
+// export const NavLinksContainer = styled.div`
+//     display: flex;
+// 	align-items: left;
+// 	margin: 0px 5px
+// 	color: #ffff;
+//     font-size: 1.4rem;
+//     text-decoration: none; /* Elimina el subrayado */
+//     cursor: pointer;
+//     transition: color 0.3s ease, background-color 0.3s ease; /* Transición suave */
+//     &:hover {
+//         color: #000; /* Cambia el color al pasar el ratón */
+//         background-color: rgba(255, 255, 255, 0.2); /* Fondo suave en hover */
+//         border-radius: 5px; /* Bordes redondeados */
+//     }
+// `;
 
 export const NavIcon = styled.div`
 	display: flex;

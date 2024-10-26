@@ -1,6 +1,6 @@
 import React from 'react';
-import { Bars, Nav, NavIcon, Logo, NavLinksContainer, NavLink } from './NavbarElements';
-// import { NavLink } from 'react-router-dom';
+import { Bars, Nav, NavIcon, Logo, NavLink } from './NavbarElements';
+
 
 
 function NavBar({ toggle }) {
@@ -10,16 +10,14 @@ function NavBar({ toggle }) {
 				<Logo />
 				
 				{/* <NavLink to='/'>Pizza</NavLink> */}
-				<NavLinksContainer>
-					<NavIcon onClick={toggle}>
-					<NavLink to='/'>Menu</NavLink>
-					</NavIcon>
-				</NavLinksContainer>
-				<NavLinksContainer>
-					<NavIcon >
-					<NavLink to='/about'>Sobre Nosotros</NavLink>
-					</NavIcon>
-				</NavLinksContainer>
+				
+				<NavIcon onClick={toggle}>
+				<NavLink to='/'>Menu</NavLink>
+				</NavIcon>
+				
+				<NavIcon >
+				<NavLink to='/about'>Sobre Nosotros</NavLink>
+				</NavIcon>
 				
 				{/* <Bars /> */}
 			</Nav>
