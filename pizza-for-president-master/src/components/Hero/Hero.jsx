@@ -20,7 +20,7 @@ function Hero() {
 
 	return (
 		<HeroContainer>
-			<NavBar toggle={toggle} />
+			
 			<Logo />
 			<Sidebar isOpen={isOpen} toggle={toggle} />
 			<HeroContent>

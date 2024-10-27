@@ -18,6 +18,10 @@ function NavBar({ toggle }) {
 				<NavIcon >
 				<NavLink to='/about'>Sobre Nosotros</NavLink>
 				</NavIcon>
+
+				<NavIcon >
+				<NavLink to='/faq'>Preguntas Frecuentes</NavLink>
+				</NavIcon>
 				
 				{/* <Bars /> */}
 			</Nav>
