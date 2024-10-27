@@ -8,6 +8,7 @@ import {
 	HeroH1,
 	HeroP,
 	HeroBtn,
+	Logo,
 } from './HeroElements';
 
 function Hero() {
@@ -19,15 +20,15 @@ function Hero() {
 
 	return (
 		<HeroContainer>
-			<NavBar toggle={toggle} />
+			
+			<Logo />
 			<Sidebar isOpen={isOpen} toggle={toggle} />
 			<HeroContent>
-				{/* <HeroItems>
-					<HeroH1>G2M</HeroH1>
-					<h2>celestial</h2> 
-					<HeroP>Insumo panadería</HeroP>
-					<HeroBtn>Place Order</HeroBtn>
-				</HeroItems> */}
+				{ <HeroItems>
+					
+					<HeroP>Insumos para panadería</HeroP>
+					{/* <HeroBtn>Place Order</HeroBtn> */}
+				</HeroItems> }
 			</HeroContent>
 		</HeroContainer>
 	);
