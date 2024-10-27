@@ -3,6 +3,7 @@ import { GlobalStyle } from './globalStyles';
 import Home from './pages/Home/Home'; // Importa Home desde su archivo correspondiente
 import Footer from './components/Footer/Footer';
 import AboutUs from './pages/AboutUs/AboutUs';
+import Faq from './pages/Faq/Faq';
 import NavBar from './components/Navbar/Navbar';
 import React, { useState } from 'react';
 
@@ -23,9 +24,8 @@ function App() {
 				{/* Otra ruta sin los elementos de Home */}
 				<Route path="/about" element={<AboutUs/>} />
 
-				<Route path="/faq" element={<AboutUs/>} />
+				<Route path="/faq" element={<Faq/>} />
 				
-				{/* Puedes agregar más rutas aquí */}
 			</Routes>
 			<Footer />
 		</Router>
