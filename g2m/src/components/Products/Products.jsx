@@ -15,10 +15,12 @@ import Carousel from '../Carousel/Carousel';
 
 function Products({ heading, data }) {
   return (
-    <>
+    
+    	<ProductsContainer>
       <ProductsHeading>{heading}</ProductsHeading>
         <Carousel data={data} />
-    </>
+        </ProductsContainer>
+    
   );
 }
 

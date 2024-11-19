@@ -5,7 +5,7 @@ export const BrandsHeading = styled.h1`
   text-align: center; 
   color: #FF8806; 
   font-size: 7rem; 
-  margin-bottom: 120px;  
+  margin-bottom: 30px;  
     @media (max-width: 1200px) {
     font-size: 6rem;
   }
@@ -23,7 +23,7 @@ export const BrandsHeading = styled.h1`
 
 export const BrandsContainer = styled.div`
 	min-height: 80vh;
-	padding: 5rem calc((100vw - 1300px) / 2);
+	padding-right,padding-left: 5rem calc((100vw - 1300px) / 2);
 	background:#f4f4f4;
 	color: #000;
 `;

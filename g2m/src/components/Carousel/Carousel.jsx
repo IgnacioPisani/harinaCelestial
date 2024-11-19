@@ -8,13 +8,14 @@ const Carousel = ({ data }) => {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 700,
+    speed: 2000,
     slidesToShow: 3,  // Número de productos visibles por defecto
     slidesToScroll: 1,
     autoplay: true,
     centerMode: true,
     autoplaySpeed: 4000,
     pauseOnHover: true,
+    lazyLoad: 'ondemand', // Activa la carga diferida de imágenes
     responsive: [
       {
         breakpoint: 768, 
