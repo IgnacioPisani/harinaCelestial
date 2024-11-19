@@ -5,7 +5,7 @@
 }
 
 .product-card {
-  background: #fff; /* Fondo blanco para las tarjetas */
+  background: #f4f4f4; /* Fondo blanco para las tarjetas */
   border-radius: 10px; /* Bordes redondeados */
   overflow: hidden; /* Oculta el desbordamiento */
   transition: transform 0.3s, opacity 0.5s ease-in-out; /* Transición suave para efectos */
@@ -18,6 +18,9 @@
   transform: scale(0.9); /* Escala reducida por defecto */
 }
 
+
+
+
 .product-card img {
   display: block;
   margin: 0 auto; /* Centra horizontalmente la imagen */
@@ -25,7 +28,8 @@
   max-height: 700px;
   max-width: 100%;
   width: auto;
-  object-fit: contain;
+  object-fit: cover; /* Asegura que las imágenes se ajusten correctamente */
+
 }
 
 .product-card h3 {
