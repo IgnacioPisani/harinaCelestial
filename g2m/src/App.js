@@ -40,7 +40,12 @@ function App() {
               path="/brands/fidelli"
               element={<ProductsByBrand data={getBrandData('Fidelli')} />}
             />
-			</Routes>
+		
+			<Route
+              path="/brands/celestial"
+              element={<ProductsByBrand data={getBrandData('Celestial')} />}
+			  />
+			  </Routes>
 		  </main>
 		  <Footer />
 		</div>
