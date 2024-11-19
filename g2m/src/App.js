@@ -7,31 +7,50 @@ import Faq from './pages/Faq/Faq';
 import NavBar from './components/Navbar/Navbar';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 import React, { useState } from 'react';
+import ProductsByBrand from './components/ProductsByBrand/ProductsByBrand';
+import { data } from './components/ProductsByBrand/data';
+
 
 function App() {
 	const [isOpen, setIsOpen] = useState(false);
-
+  
 	const toggle = () => {
-		setIsOpen(!isOpen);
+	  setIsOpen(!isOpen);
 	};
+
+	const getBrandData = (brandName) => data.find((brand) => brand.name.toLowerCase() === brandName.toLowerCase());
+	
+  
 	return (
-		<Router>
-			  <ScrollToTop />
-			<GlobalStyle />
-			<NavBar toggle={toggle} />
+	  <Router>
+		<ScrollToTop />
+		<GlobalStyle />
+		<div className="app-container">
+		  <NavBar toggle={toggle} />
+		  <main className="main-content">
 			<Routes>
-				{/* Ruta principal con el componente Home */}
-				<Route exact path="/" element={<Home />} />
-				
-				{/* Otra ruta sin los elementos de Home */}
-				<Route path="/about" element={<AboutUs/>} />
-
-				<Route path="/faq" element={<Faq/>} />
-				
-			</Routes>
-			<Footer />
-		</Router>
+			  <Route exact path="/" element={<Home />} />
+			  <Route path="/about" element={<AboutUs />} />
+			  <Route path="/faq" element={<Faq />} />
+			  <Route
+              path="/brands/capannoli"
+              element={<ProductsByBrand data={getBrandData('Capannoli')} />}
+            />
+            <Route
+              path="/brands/fidelli"
+              element={<ProductsByBrand data={getBrandData('Fidelli')} />}
+            />
+		
+			<Route
+              path="/brands/celestial"
+              element={<ProductsByBrand data={getBrandData('Celestial')} />}
+			  />
+			  </Routes>
+		  </main>
+		  <Footer />
+		</div>
+	  </Router>
 	);
-}
-
+  }
+  
 export default App;
