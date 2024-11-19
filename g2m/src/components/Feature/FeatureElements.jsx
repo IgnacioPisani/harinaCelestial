@@ -4,8 +4,8 @@ import DividerPic from '../../images/divisores-pantalla/pan-cortado.jpg';
 
 export const FeatureContainer = styled.div`
 	background-image: 
-		linear-gradient(to top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 20%), /* Gradiente superior corto */
-		linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 20%), /* Gradiente inferior corto */
+	    linear-gradient(to top, rgba(244, 244, 244, 1) 0%, rgba(244, 244, 244, 0) 20%), /* Gradiente superior corto */
+		linear-gradient(to bottom, rgba(244, 244, 244, 1) 0%, rgba(244, 244, 244, 0) 20%), /* Gradiente inferior corto */
 		url(${DividerPic}); /* Imagen de fondo */
 
 	height: 110vh;
