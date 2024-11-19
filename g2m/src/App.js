@@ -5,6 +5,7 @@ import Footer from './components/Footer/Footer';
 import AboutUs from './pages/AboutUs/AboutUs';
 import Faq from './pages/Faq/Faq';
 import NavBar from './components/Navbar/Navbar';
+import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 import React, { useState } from 'react';
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
 	};
 	return (
 		<Router>
+			  <ScrollToTop />
 			<GlobalStyle />
 			<NavBar toggle={toggle} />
 			<Routes>
