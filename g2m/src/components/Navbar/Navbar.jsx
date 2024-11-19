@@ -54,7 +54,7 @@ function NavBar({ toggle }) {
           options={[
             { label: 'Celestial', path: '/brands/celestial' },
             { label: 'Fidelli', path: '/brands/fidelli' },
-            { label: 'Campagnoli', path: '/brands/campagnoli' },
+            { label: 'Capannoli', path: '/brands/capannoli' },
           ]}
         />
       </NavIcon>
