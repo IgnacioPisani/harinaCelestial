@@ -18,7 +18,7 @@ function Brands({ heading, brands }) {
 			<BrandsWrapper>
 				{brands.map((brand, index) => (
 					<BrandCard key={index}>
-						<BrandLink href="" target="_blank" rel="noopener noreferrer">
+						<BrandLink href={brand.url} target="_blank" rel="noopener noreferrer">
 							<BrandImg src={brand.img} alt={brand.alt} />
 						</BrandLink>
 					</BrandCard>
