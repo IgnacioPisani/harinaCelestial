@@ -1,17 +1,24 @@
 /* Hover sobre los enlaces Nav.Link */
 .navbar .nav-link:hover {
-    background-color: #e67e00 !important; /* Color naranja más oscuro para el fondo */
-    color: #fff !important; /* Asegurarse que el texto sigue blanco */
-  }
+  background-color: #e67e00 !important; /* Color naranja más oscuro para el fondo */
+  color: #fff !important; /* Asegurarse que el texto sigue blanco */
+}
 
-  /* Cambiar color de la flecha del NavDropdown */
-  .navbar .dropdown-toggle::after {
-    color: #fff !important; /* Flecha blanca */
-    /* Asegurando que se aprecie el cambio en el tamaño de la flecha */
+/* Cambiar color de la flecha del NavDropdown */
+.navbar .dropdown-toggle::after {
+  color: #fff !important; /* Flecha blanca */
+  font-size: 2rem; /* Ajusta el tamaño de la flecha */
+}
 
-    font-size: 2rem; /* Ajusta el tamaño de la flecha */
+/* Estilo del dropdown */
+.dropdown-menu {
+  background-color: #fd8b06 !important; /* Fondo naranja */
+}
 
-  
-  
-  }
-  
+/* Hover sobre las opciones del dropdown */
+.dropdown-menu .dropdown-item:hover {
+  background-color: #e67e00 !important; /* Fondo naranja oscuro en hover */
+  color: #fff !important; /* Texto blanco en hover */
+  border-radius: 5px; /* Opcional: bordes redondeados en hover */
+  padding-left: 15px; /* Opcional: añade un poco de desplazamiento */
+}

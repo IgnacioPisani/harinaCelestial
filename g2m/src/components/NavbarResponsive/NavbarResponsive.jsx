@@ -10,7 +10,7 @@ function NavbarResponsive() {
   return (
     <Navbar expand="lg" style={{ backgroundColor: '#fd8b06' }} className="sticky-top">
       <Container fluid className="px-0">
-        <Navbar.Brand href="#home" className="d-flex align-items-center">
+        <Navbar.Brand href="/" className="d-flex align-items-center">
           <img
             src={Logo}
             alt="Logo"
@@ -38,7 +38,7 @@ function NavbarResponsive() {
             <Nav.Link href="/faq" style={{ color: '#fff', fontWeight: 'bold', fontSize: '30px', marginRight: '20px' }}>
               Preguntas Frecuentes
             </Nav.Link>
-            <Nav.Link href="/aboutUs" style={{ color: '#fff', fontWeight: 'bold', fontSize: '30px', marginRight: '20px' }}>
+            <Nav.Link href="/about" style={{ color: '#fff', fontWeight: 'bold', fontSize: '30px', marginRight: '20px' }}>
               Sobre Nosotros
             </Nav.Link>
 
@@ -73,13 +73,13 @@ function NavbarResponsive() {
               id="navbarScrollingDropdown"
             >
               <NavDropdown.Item
-                href="#action4"
+                href="https://api.whatsapp.com/send/?phone=5493515165078&text&type=phone_number&app_absent=0"
                 style={{ color: '#fff', fontWeight: 'bold', fontSize: '18px', backgroundColor: '#fd8b06' }}
               >
                 Whatsapp
               </NavDropdown.Item>
               <NavDropdown.Item
-                href="#action5"
+                href="https://www.instagram.com/g2m.celestial/"
                 style={{ color: '#fff', fontWeight: 'bold', fontSize: '18px', backgroundColor: '#fd8b06' }}
               >
                 Instagram
