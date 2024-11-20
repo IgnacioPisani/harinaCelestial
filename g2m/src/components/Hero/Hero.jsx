@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import NavBar from '../Navbar/Navbar';
+import NavBar from '../NavbarResponsive/NavbarResponsive';
 import Sidebar from '../Sidebar/Sidebar';
 import {
 	HeroContainer,
