@@ -1,30 +1,23 @@
-import React, { useState } from 'react';
+import React from 'react';
 import {
-	HeroContainer,
-	HeroContent,
-	HeroItems,
-	HeroH1,
-	HeroP,
-	HeroBtn,
-	Logo,
+  HeroContainer,
+  HeroContent,
+  HeroItems,
+  HeroP,
+  Logo
 } from './HeroElements';
 
 function Hero() {
-
-
-	return (
-		<HeroContainer>
-			
-			<Logo />
-			<HeroContent>
-				{ <HeroItems>
-					
-					<HeroP>Insumos para panadería</HeroP>
-					{/* <HeroBtn>Place Order</HeroBtn> */}
-				</HeroItems> }
-			</HeroContent>
-		</HeroContainer>
-	);
+  return (
+    <HeroContainer>
+      <HeroContent>
+        <Logo />
+        <HeroItems>
+          <HeroP>Insumos para panadería</HeroP>
+        </HeroItems>
+      </HeroContent>
+    </HeroContainer>
+  );
 }
 
 export default Hero;
