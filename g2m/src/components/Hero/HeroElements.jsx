@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import ImgBg from '../../images/hero/hero-harina-industrial.jpg';
-import ImgLogo from '../../images/g2mnaranja.png';// HeroElements.js
+import ImgLogo from '../../images/logo-g2m/g2mnaranja.webp';// HeroElements.js
 
 export const HeroContainer = styled.div`
   background: linear-gradient(to right, rgba(255, 255, 255, 0.45), rgba(0, 0, 0, 0.02)), 

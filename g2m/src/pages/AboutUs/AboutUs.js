@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import './AboutUs.css';
-import compromiso from '../../images/compromiso.jpg';
-import nosotros from '../../images/nosotros.jpg';
-import experiencia from '../../images/experiencia.jpg';
+import compromiso from '../../images/about-us/compromiso.jpg';
+import nosotros from '../../images/about-us/nosotros.webp';
+import experiencia from '../../images/about-us/experiencia.webp';
 
 const AboutUs = () => {
 

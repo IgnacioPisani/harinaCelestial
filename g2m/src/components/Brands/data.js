@@ -1,6 +1,6 @@
-import Capannoli from '../../images/capannoli.png';
-import Celestial from '../../images/celestial.png';
-import Fidelli from '../../images/fidelli.png';
+import Capannoli from '../../images/capannoli/logo/capannoli.webp';
+import Celestial from '../../images/celestial/logo/celestial.webp';
+import Fidelli from '../../images/fidelli/logo/fidelli.webp';
 
 
 export const brandData = [

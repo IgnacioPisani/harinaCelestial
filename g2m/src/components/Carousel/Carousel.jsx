@@ -12,7 +12,7 @@ const Carousel = ({ data }) => {
   };
 
   const settings = {
-    dots: true,
+    dots: true, // Habilitar los puntos de paginación
     infinite: true,
     speed: 2000,
     slidesToShow: 3,
@@ -22,6 +22,8 @@ const Carousel = ({ data }) => {
     autoplaySpeed: 4000,
     pauseOnHover: true,
     lazyLoad: 'ondemand',
+    prevArrow: <div>←</div>, // Personaliza las flechas si es necesario
+    nextArrow: <div>→</div>,
     responsive: [
       {
         breakpoint: 768, 
