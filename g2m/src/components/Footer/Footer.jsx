@@ -24,7 +24,7 @@ function Footer() {
 			<FooterWrap>
 				<SocialMedia>
 					<SocialMediaWrap>
-					<SocialLogoImage >
+						<SocialLogoImage >
 							<img src={Logo} alt='Logo' />
 						</SocialLogoImage>						
 						<SocialIcons>
