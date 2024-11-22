@@ -20,7 +20,7 @@ export const Logo = styled.img.attrs({
   src: ImgLogo,
   alt: "Logo de G2M"
 })`
-  width: 300px;
+  width: 350px;
   height: auto;
   margin-bottom: 1.5rem; /* Espacio entre el logo y el texto */
 

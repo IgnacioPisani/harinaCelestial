@@ -34,8 +34,8 @@ function NavbarResponsive() {
             </NavDropdown>
 
             <NavDropdown title={<span className="navbar-link">Contactos</span>} id="navbarScrollingDropdown">
-              <NavDropdown.Item href="https://api.whatsapp.com/send/?phone=5493515165078&text&type=phone_number&app_absent=0" className="navbar-item">Whatsapp</NavDropdown.Item>
-              <NavDropdown.Item href="https://www.instagram.com/g2m.celestial/" className="navbar-item">Instagram</NavDropdown.Item>
+              <NavDropdown.Item href="https://api.whatsapp.com/send/?phone=5493515165078&text&type=phone_number&app_absent=0" className="navbar-item" target="_blank" rel="noopener noreferrer">Whatsapp</NavDropdown.Item>
+              <NavDropdown.Item href="https://www.instagram.com/g2m.celestial/" className="navbar-item" target="_blank" rel="noopener noreferrer">Instagram</NavDropdown.Item>
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>

@@ -13,7 +13,6 @@ function Hero() {
       <HeroContent>
         <Logo />
         <HeroItems>
-          <HeroP>Insumos para panadería</HeroP>
         </HeroItems>
       </HeroContent>
     </HeroContainer>
