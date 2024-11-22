@@ -3,9 +3,8 @@ import ImgBg from '../../images/hero/hero-harina-industrial.jpg';
 import ImgLogo from '../../images/logo-g2m/g2mnaranja.webp';
 
 export const HeroContainer = styled.div`
-  background: linear-gradient(to right, rgba(255, 255, 255, 0.45), rgba(0, 0, 0, 0.02)), 
-    linear-gradient(to top, rgba(244, 244, 244, 1) 0%, rgba(244, 244, 244, 0) 20%), 
-    url(${ImgBg});
+  background:linear-gradient(to top, rgba(244, 244, 244, 1) 0%, rgba(244, 244, 244, 0) 20%), 
+  url(${ImgBg});
   height: 100vh;
   background-position: center;
   background-size: cover;

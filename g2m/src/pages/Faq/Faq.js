@@ -32,6 +32,7 @@ const Faq = () => {
   };
 
   return (
+    <div className="faq-container">
     <section className="faq">
       <h2 className="faq-title">Preguntas Frecuentes</h2>
       {faqData.map((item, index) => (
@@ -45,6 +46,7 @@ const Faq = () => {
         </div>
       ))}
     </section>
+    </div>
   );
 };
 
