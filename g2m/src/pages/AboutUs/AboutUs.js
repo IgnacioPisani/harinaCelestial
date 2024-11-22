@@ -5,16 +5,14 @@ import nosotros from '../../images/about-us/nosotros.webp';
 import experiencia from '../../images/about-us/experiencia.webp';
 
 const AboutUs = () => {
-
   useEffect(() => {
     const sections = document.querySelectorAll('.about-us-section');
     
     const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
+      entries.forEach((entry) => {
         if (entry.isIntersecting) {
           entry.target.classList.add('in-view');
-        } else {
-          entry.target.classList.remove('in-view');
+          observer.unobserve(entry.target); // Deja de observar la sección
         }
       });
     });
@@ -37,7 +35,7 @@ const AboutUs = () => {
         <div className="about-us-text">
           <h2>Sobre Nosotros</h2>
           <p>
-          Representamos con orgullo a Molinos Río Segundo, especializándonos en la venta de harina y productos masivos para soluciones industriales y de consumo final.
+            Representamos con orgullo a Molinos Río Segundo, especializándonos en la venta de harina y productos masivos para soluciones industriales y de consumo final.
           </p>
         </div>
         <img src={nosotros} alt="Harina Industrial" className="about-us-image" />
@@ -47,7 +45,7 @@ const AboutUs = () => {
         <div className="about-us-text">
           <h2>Nuestra Experiencia</h2>
           <p>
-          Con más de 20 años de trayectoria en el mercado, contamos con una sólida experiencia que abarca tres generaciones dedicadas a la venta y distribución de harina.
+            Con más de 20 años de trayectoria en el mercado, contamos con una sólida experiencia que abarca tres generaciones dedicadas a la venta y distribución de harina.
           </p>
         </div>
         <img src={experiencia} alt="Experiencia de 20 años" className="about-us-image" />
@@ -57,7 +55,8 @@ const AboutUs = () => {
         <div className="about-us-text">
           <h2>Nuestro Compromiso</h2>
           <p>
-          Nos distinguimos tanto por la calidad de nuestros productos como por el servicio al cliente que brindamos, adaptado a las necesidades de cada uno de nuestros socios comerciales.</p>
+            Nos distinguimos tanto por la calidad de nuestros productos como por el servicio al cliente que brindamos, adaptado a las necesidades de cada uno de nuestros socios comerciales.
+          </p>
         </div>
         <img src={compromiso} alt="Calidad del Producto" className="about-us-image" />
       </div>
