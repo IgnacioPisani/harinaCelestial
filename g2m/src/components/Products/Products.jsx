@@ -1,26 +1,18 @@
 import React from 'react';
 import {
   ProductsContainer,
-  ProductsHeading,
-  ProductsWrapper,
-  ProductsCard,
-  ProductsImg,
-  ProductsInfo,
-  ProductsTitle,
-  ProductsDesc,
-  ProductsPrice,
-  ProductsButton,
+  ProductsHeading
 } from './ProductsElements';
-import Carousel from '../Carousel/Carousel';
+import CustomCarousel from '../Carousel/CustomCarousel';
 
 function Products({ heading, data }) {
   return (
-    
-    	<ProductsContainer>
-      <ProductsHeading>{heading}</ProductsHeading>
-        <Carousel data={data} />
-        </ProductsContainer>
-    
+
+    <ProductsContainer>
+        <ProductsHeading>{heading}</ProductsHeading>
+        <CustomCarousel data={data} />
+      </ProductsContainer>
+
   );
 }
 
