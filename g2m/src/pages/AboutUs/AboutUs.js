@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import './AboutUs.css';
 import compromiso from '../../images/about-us/compromiso.jpg';
-import nosotros from '../../images/about-us/nosotros.webp';
-import experiencia from '../../images/about-us/experiencia.webp';
+import nosotros from '../../images/about-us/nosotros.jpg';
+import experiencia from '../../images/about-us/experiencia.jpg';
 
 const AboutUs = () => {
   useEffect(() => {
@@ -30,6 +30,7 @@ const AboutUs = () => {
   }, []);
 
   return (
+    <div className="about-us-container">
     <section className="about-us">
       <div className="about-us-section left">
         <div className="about-us-text">
@@ -61,6 +62,7 @@ const AboutUs = () => {
         <img src={compromiso} alt="Calidad del Producto" className="about-us-image" />
       </div>
     </section>
+    </div>
   );
 };
 

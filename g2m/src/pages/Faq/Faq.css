@@ -9,6 +9,11 @@
     min-height: 90vh; /* Asegura que ocupe toda la pantalla */
 }
 
+.faq-container {
+    padding-top: 50px; 
+    background: #f4f4f4;
+}
+
 .faq-title {
     color: #FF8806;
     font-size: 5rem;
@@ -52,22 +57,30 @@
 
 /* Media Query para pantallas pequeñas */
 @media (max-width: 768px) {
-    .faq-answer {
-        display: block; /* Asegura que se muestre cuando se abra */
-        max-height: none; /* Permitir que se muestre completamente */
-    }
-}
-
-@media (max-width: 480px) {
     .faq-title {
-        font-size: 3rem;
+        font-size: 4rem; /* Reducir tamaño para pantallas medianas */
     }
 
     .faq-question {
-        font-size: 2rem;
+        font-size: 2.4rem; /* Ajuste para mantener proporción */
     }
 
     .faq-answer {
-        font-size: 1.6rem;
+        font-size: 1.8rem; /* Reducir tamaño de la respuesta */
+    }
+}
+
+/* Media Query para pantallas muy pequeñas */
+@media (max-width: 480px) {
+    .faq-title {
+        font-size: 3rem; /* Ajuste final para pantallas más pequeñas */
+    }
+
+    .faq-question {
+        font-size: 2rem; /* Ajustar pregunta para pantallas más pequeñas */
+    }
+
+    .faq-answer {
+        font-size: 1.6rem; /* Ajuste de tamaño para respuesta */
     }
 }
