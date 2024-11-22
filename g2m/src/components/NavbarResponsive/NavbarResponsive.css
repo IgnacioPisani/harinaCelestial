@@ -1,0 +1,60 @@
+/* Reducir el tamaño del navbar */
+.custom-navbar {
+  padding-top: 5px !important; /* Reducir el padding superior */
+  padding-bottom: 5px !important; /* Reducir el padding inferior */
+}
+
+/* Logo: reducir el espacio alrededor */
+.navbar-logo {
+  padding-left: 10px;
+  padding-bottom: 5px;
+  width: 50px; /* Reducir tamaño */
+  height: auto;
+}
+
+/* Reducir tamaño de los enlaces y espaciado */
+.navbar-link {
+  color: #fff !important;
+  font-weight: bold;
+  font-size: 18px !important; /* Reducir tamaño de fuente */
+  margin-right: 10px !important; /* Reducir margen entre enlaces */
+}
+
+/* Reducir tamaño y espaciado de los items del dropdown */
+.navbar-item {
+  color: #fff !important;
+  font-weight: bold;
+  font-size: 16px !important; /* Reducir tamaño de fuente */
+  background-color: #fd8b06;
+}
+
+/* Sombra del navbar (si quieres mantenerla) */
+.custom-navbar {
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover sobre los enlaces Nav.Link */
+.navbar .nav-link:hover {
+  background-color: #e67e00 !important; /* Fondo naranja oscuro */
+  color: #fff !important; /* Texto blanco */
+  border-radius: 5px;
+}
+
+/* Cambiar color de la flecha del dropdown */
+.navbar .dropdown-toggle::after {
+  color: #fff !important;
+}
+
+/* Dropdown estilo */
+.dropdown-menu {
+  background-color: #fd8b06 !important;
+  border: none;
+  border-radius: 5px;
+}
+
+/* Hover sobre las opciones del dropdown */
+.dropdown-menu .dropdown-item:hover {
+  background-color: #e67e00 !important;
+  color: #fff !important;
+  padding-left: 15px;
+}

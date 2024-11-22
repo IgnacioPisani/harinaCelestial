@@ -4,7 +4,7 @@ import Home from './pages/Home/Home'; // Importa Home desde su archivo correspon
 import Footer from './components/Footer/Footer';
 import AboutUs from './pages/AboutUs/AboutUs';
 import Faq from './pages/Faq/Faq';
-import NavBar from './components/Navbar/Navbar';
+import NavBar from './components/NavbarResponsive/NavbarResponsive';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 import React, { useState } from 'react';
 import ProductsByBrand from './components/ProductsByBrand/ProductsByBrand';

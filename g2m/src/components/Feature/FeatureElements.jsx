@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import DividerPic from '../../images/divisores-pantalla/pan-cortado.jpg';
+import DividerPic from '../../images/divisores-pantalla/pan-cortado.webp';
 
 
 export const FeatureContainer = styled.div`

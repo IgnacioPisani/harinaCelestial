@@ -1,5 +1,5 @@
 import React from 'react';
-import Logo from '../../images/g2m.png'
+import Logo from '../../images/logo-g2m/g2m-transparente.webp'
 import {
 	FaFacebook,
 	FaInstagram,
@@ -24,7 +24,7 @@ function Footer() {
 			<FooterWrap>
 				<SocialMedia>
 					<SocialMediaWrap>
-					<SocialLogoImage >
+						<SocialLogoImage >
 							<img src={Logo} alt='Logo' />
 						</SocialLogoImage>						
 						<SocialIcons>

@@ -1,9 +1,9 @@
 
-import tripleCero from '../../images/triple-0.png';
-import tripleCeroPreparada from '../../images/triple-0-preparada.png';
-import tripleCeroPremium from '../../images/triple-0-premium.png';
-import tripleCeroPlus from '../../images/triple-0-plus.png';
-import cuatroCero from '../../images/cuatro-0.png';
+import tripleCero from '../../images/celestial/harinas-carousel/triple-0.webp';
+import tripleCeroPreparada from '../../images/celestial/harinas-carousel/triple-0-preparada.webp';
+import tripleCeroPremium from '../../images/celestial/harinas-carousel/triple-0-premium.webp';
+import tripleCeroPlus from '../../images/celestial/harinas-carousel/triple-0-plus.webp';
+import cuatroCero from '../../images/celestial/harinas-carousel/cuatro-0.webp';
 
 
 

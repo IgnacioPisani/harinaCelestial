@@ -1,64 +1,58 @@
 
-import CapannoliCaracolito from '../../images/capannoli/fideos/caracolitos.png';
-import CapannoliCelentano from '../../images/capannoli/fideos/celentano.png';
-import CapannoliCodos from '../../images/capannoli/fideos/codos.png';
-import CapannoliDedalitos from '../../images/capannoli/fideos/dedalitos.png';
-import CapannoliMostachol from '../../images/capannoli/fideos/mostachol.png';
-import CapannoliRadiatore from '../../images/capannoli/fideos/radiatore.png';
-import CapannoliRigatti from '../../images/capannoli/fideos/rigatti.png';
-import CapannoliSpaghetti from '../../images/capannoli/fideos/spaghetti.png';
-import CapannoliTallarin from '../../images/capannoli/fideos/tallarin.png';
-import CapannoliTirabuzon from '../../images/capannoli/fideos/tirabuzon.png';
-import CapannoliH000 from '../../images/capannoli/harinas/h000.png';
-import CapannoliH0000 from '../../images/capannoli/harinas/h0000.png';
-import CapannoliHleudante from '../../images/capannoli/harinas/hleudante.png';
-import CapannoliLogo from '../../images/capannoli.png';
+import CapannoliCaracolito from '../../images/capannoli/fideos/caracolitos.webp';
+import CapannoliCelentano from '../../images/capannoli/fideos/celentano.webp';
+import CapannoliCodos from '../../images/capannoli/fideos/codos.webp';
+import CapannoliDedalitos from '../../images/capannoli/fideos/dedalitos.webp';
+import CapannoliMostachol from '../../images/capannoli/fideos/mostachol.webp';
+import CapannoliRadiatore from '../../images/capannoli/fideos/radiatore.webp';
+import CapannoliRigatti from '../../images/capannoli/fideos/rigatti.webp';
+import CapannoliSpaghetti from '../../images/capannoli/fideos/spaghetti.webp';
+import CapannoliTallarin from '../../images/capannoli/fideos/tallarin.webp';
+import CapannoliTirabuzon from '../../images/capannoli/fideos/tirabuzon.webp';
+import CapannoliH000 from '../../images/capannoli/harinas/h000.webp';
+import CapannoliH0000 from '../../images/capannoli/harinas/h0000.webp';
+import CapannoliHleudante from '../../images/capannoli/harinas/hleudante.webp';
+import CapannoliLogo from '../../images/capannoli/logo/capannoli.webp';
 
-import FidelliCelentano from '../../images/fidelli/fideos/celentano.png';
-import FidelliFusilli from '../../images/fidelli/fideos/fusilli.png';
-import FidelliGomitiRigati from '../../images/fidelli/fideos/gomiti-rigati.png';
-import FidelliMostaccioli from '../../images/fidelli/fideos/mostaccioli.png';
-import FidelliPenneRigate from '../../images/fidelli/fideos/penne-rigate.png';
-import FidelliRadiatori from '../../images/fidelli/fideos/radiatori.png';
-import FidelliSpaghetti from '../../images/fidelli/fideos/spaghetti.png';
-import FidelliTagliolini from '../../images/fidelli/fideos/tagliolini.png';
-import FidelliLogo from '../../images/fidelli.png';
+import FidelliCelentano from '../../images/fidelli/fideos/celentano.webp';
+import FidelliFusilli from '../../images/fidelli/fideos/fusilli.webp';
+import FidelliGomitiRigati from '../../images/fidelli/fideos/gomiti-rigati.webp';
+import FidelliMostaccioli from '../../images/fidelli/fideos/mostaccioli.webp';
+import FidelliPenneRigate from '../../images/fidelli/fideos/penne-rigate.webp';
+import FidelliRadiatori from '../../images/fidelli/fideos/radiatori.webp';
+import FidelliSpaghetti from '../../images/fidelli/fideos/spaghetti.webp';
+import FidelliTagliolini from '../../images/fidelli/fideos/tagliolini.webp';
+import FidelliLogo from '../../images/fidelli/logo/fidelli.webp';
 
-
-
-
-
-
-import CelestialHI000 from '../../images/celestial/harinas-industriales/h000.png';
-import CelestialHI0000 from '../../images/celestial/harinas-industriales/h0000.png';
-import CelestialHI000plus from '../../images/celestial/harinas-industriales/h000plus.png';
-import CelestialHI000premium from '../../images/celestial/harinas-industriales/h000premium.png';
-import CelestialHI000preparada from '../../images/celestial/harinas-industriales/h000preparada.png';
-import CelestialH000 from '../../images/celestial/harinas/h000.png';
-import CelestialH0000 from '../../images/celestial/harinas/h0000.png';
-import CelestialHleudante from '../../images/celestial/harinas/hleudante.png';
-import CelestialLogo from '../../images/celestial.png';
-import CelestialCaracolito from '../../images/celestial/fideos/caracolito.png';
-import CelestialCelentano from '../../images/celestial/fideos/celentano.png';
-import CelestialCodos from '../../images/celestial/fideos/codos.png';
-import CelestialDedalitos from '../../images/celestial/fideos/dedalitos.png';
-import CelestialMostachol from '../../images/celestial/fideos/mostachol.png';
-import CelestialRadiatore from '../../images/celestial/fideos/radiatore.png';
-import CelestialRigatti from '../../images/celestial/fideos/rigatti.png';
-import CelestialSpaghetti from '../../images/celestial/fideos/spaghetti.png';
-import CelestialTallarin from '../../images/celestial/fideos/tallarin.png';
-import CelestialTirabuzon from '../../images/celestial/fideos/tirabuzon.png';
-import CelestialGarbanzos from '../../images/celestial/legumbres/garbanzos.png';
-import CelestialLentejas from '../../images/celestial/legumbres/lentejas.png';
-import CelestialPisingallo from '../../images/celestial/legumbres/pisingallo.png';
-import CelestialPorotos from '../../images/celestial/legumbres/porotos.png';
-import CelestialBizcochueloVain from '../../images/celestial/preparaciones/bizcochuelo-vain.png';
-import CelestialBizcochueloChoc from '../../images/celestial/preparaciones/bizcochuelo-choc.png';
-import CelestialÑoquis from '../../images/celestial/preparaciones/ñoquis.png';
-import CelestialPizza from '../../images/celestial/preparaciones/pizza.png';
-import CelestialAnillitos from '../../images/celestial/galletas/anillitos.png';
-import CelestialBastones from '../../images/celestial/galletas/bastones.png';
-
+import CelestialHI000 from '../../images/celestial/harinas-industriales/h000.webp';
+import CelestialHI0000 from '../../images/celestial/harinas-industriales/h0000.webp';
+import CelestialHI000plus from '../../images/celestial/harinas-industriales/h000plus.webp';
+import CelestialHI000premium from '../../images/celestial/harinas-industriales/h000premium.webp';
+import CelestialHI000preparada from '../../images/celestial/harinas-industriales/h000preparada.webp';
+import CelestialH000 from '../../images/celestial/harinas/h000.webp';
+import CelestialH0000 from '../../images/celestial/harinas/h0000.webp';
+import CelestialHleudante from '../../images/celestial/harinas/hleudante.webp';
+import CelestialCaracolito from '../../images/celestial/fideos/caracolito.webp';
+import CelestialCelentano from '../../images/celestial/fideos/celentano.webp';
+import CelestialCodos from '../../images/celestial/fideos/codos.webp';
+import CelestialDedalitos from '../../images/celestial/fideos/dedalitos.webp';
+import CelestialMostachol from '../../images/celestial/fideos/mostachol.webp';
+import CelestialRadiatore from '../../images/celestial/fideos/radiatore.webp';
+import CelestialRigatti from '../../images/celestial/fideos/rigatti.webp';
+import CelestialSpaghetti from '../../images/celestial/fideos/spaghetti.webp';
+import CelestialTallarin from '../../images/celestial/fideos/tallarin.webp';
+import CelestialTirabuzon from '../../images/celestial/fideos/tirabuzon.webp';
+import CelestialGarbanzos from '../../images/celestial/legumbres/garbanzos.webp';
+import CelestialLentejas from '../../images/celestial/legumbres/lentejas.webp';
+import CelestialPisingallo from '../../images/celestial/legumbres/pisingallo.webp';
+import CelestialPorotos from '../../images/celestial/legumbres/porotos.webp';
+import CelestialBizcochueloVain from '../../images/celestial/preparaciones/bizcochuelo-vain.webp';
+import CelestialBizcochueloChoc from '../../images/celestial/preparaciones/bizcochuelo-choc.webp';
+import CelestialÑoquis from '../../images/celestial/preparaciones/ñoquis.webp';
+import CelestialPizza from '../../images/celestial/preparaciones/pizza.webp';
+import CelestialAnillitos from '../../images/celestial/galletas/anillitos.webp';
+import CelestialBastones from '../../images/celestial/galletas/bastones.webp';
+import CelestialLogo from '../../images/celestial/logo/celestial.webp';
 
 export const data = [
   {
