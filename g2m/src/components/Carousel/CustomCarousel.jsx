@@ -13,9 +13,9 @@ function CustomCarousel({ data }) {
               src={item.img}
               alt={item.alt}
             />
-            <Carousel.Caption>
+            {/* <Carousel.Caption>
               <h5 className="carousel-product-name">{item.name}</h5>
-            </Carousel.Caption>
+            </Carousel.Caption> */}
           </Carousel.Item>
         ))}
       </Carousel>

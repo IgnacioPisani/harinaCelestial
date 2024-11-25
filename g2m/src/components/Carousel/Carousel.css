@@ -21,6 +21,26 @@
   font-size: 1.2rem;
 }
 
+/* Personalización de las flechas de navegación */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(51%) sepia(91%) saturate(300%) hue-rotate(7deg) brightness(97%) contrast(94%);
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+  filter: invert(51%) sepia(91%) saturate(500%) hue-rotate(7deg) brightness(120%) contrast(94%);
+}
+
+/* Personalización de los indicadores (barras inferiores) */
+.carousel-indicators [data-bs-target] {
+  background-color: rgba(255, 165, 0, 0.7); /* Naranja suave */
+}
+
+.carousel-indicators [data-bs-target].active {
+  background-color: rgba(255, 140, 0, 0.9); /* Naranja más fuerte para el indicador activo */
+}
+
 /* Responsividad */
 @media (max-width: 768px) {
   .carousel-product-img {
