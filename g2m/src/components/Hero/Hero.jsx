@@ -4,7 +4,7 @@ import {
   HeroContent,
   HeroItems,
   HeroP,
-  Logo
+  Logo,
 } from './HeroElements';
 
 function Hero() {
@@ -13,6 +13,12 @@ function Hero() {
       <HeroContent>
         <Logo />
         <HeroItems>
+          <HeroP>
+          <span>CALIDAD </span> EN CADA GRANO.
+          </HeroP>
+          <HeroP>
+          <span>AMOR </span> EN CADA PLATO.
+          </HeroP>
         </HeroItems>
       </HeroContent>
     </HeroContainer>
