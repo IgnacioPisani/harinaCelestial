@@ -3,61 +3,105 @@ import ImgBg from '../../images/hero/hero-harina-industrial.jpg';
 import ImgLogo from '../../images/logo-g2m/g2mnaranja.webp';
 
 export const HeroContainer = styled.div`
-  background:linear-gradient(to top, rgba(244, 244, 244, 1) 0%, rgba(244, 244, 244, 0) 20%), 
-  url(${ImgBg});
+  background: linear-gradient(
+      to top,
+      rgba(244, 244, 244, 1) 0%,
+      rgba(244, 244, 244, 0) 20%
+    ),
+    url(${ImgBg});
   height: 100vh;
   background-position: center;
   background-size: cover;
   display: flex;
-  flex-direction: column; /* Apila los elementos verticalmente */
-  align-items: center;
-  justify-content: center;
+  position: relative; /* Habilita posicionamiento absoluto para los hijos */
   padding: 2rem;
+  width: 100%; /* Asegura que el contenedor ocupe el ancho completo */
+  overflow-x: hidden; /* Evita el desbordamiento horizontal */
+
+  @media screen and (max-width: 768px) {
+    background-position: 50% center;
+  }
+
+  @media screen and (max-width: 480px) {
+    background-position: 70% center;
+  }
 `;
+
 
 export const Logo = styled.img.attrs({
   src: ImgLogo,
-  alt: "Logo de G2M"
+  alt: "Logo de G2M",
 })`
+  position: absolute;
+  bottom: 14rem; /* Coloca el logo encima de los párrafos */
+  right: 2rem; /* Ajusta al borde derecho */
   width: 350px;
   height: auto;
-  margin-bottom: 1.5rem; /* Espacio entre el logo y el texto */
 
   @media screen and (max-width: 768px) {
-    width: 150px; /* Tamaño reducido en pantallas pequeñas */
+    bottom: 9rem;
+    width: 220px;
+  }
+
+  @media screen and (max-width: 480px) {
+    bottom: 140%; /* Centra verticalmente */
+    left: 50%; /* Centra horizontalmente */
+    transform: translate(-50%, 50%); /* Asegura el centrado exacto */
+    width: 140px; /* Ajusta el tamaño del logo */
   }
 `;
 
 export const HeroContent = styled.div`
+  position: absolute;
+  bottom: 4rem; /* Posición inicial */
+  right: 2rem; /* Alineados a la derecha */
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center; /* Centra el texto debajo del logo */
+  align-items: flex-end;
+  text-align: right;
+
+  @media screen and (max-width: 768px) {
+    bottom: 8rem; /* Los párrafos suben más */
+    right: 1rem;
+  }
+
+  @media screen and (max-width: 480px) {
+    bottom: 40%; /* Ajusta la posición vertical para centrar */
+    right: 50%; /* Ajusta la posición horizontal para centrar */
+    transform: translate(50%, 50%); /* Centrado exacto */
+    align-items: center; /* Centra los párrafos */
+    text-align: center; /* Centra el texto */
+  }
 `;
 
 export const HeroItems = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  max-width: 650px;
-  width: 100%;
+  gap: 0.5rem; /* Espaciado entre los párrafos */
 `;
+
 export const HeroP = styled.p`
-  font-size: clamp(1rem, 1.25vw, 1.5rem); /* Reducir el tamaño a la mitad */
+  font-size: clamp(2.85rem, 1.25vw, 1.5rem);
   color: #fff;
   text-transform: uppercase;
   font-weight: bold;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 1.2);
   margin: 0;
-  background-color: #ff8c00; /* Fondo naranja */
-  padding: 0.5rem 1rem; /* Espaciado interno reducido */
-  border-radius: 10px; /* Bordes redondeados */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra */
-  display: inline-block; /* Asegura que el fondo se ajuste al contenido */
+  padding: 0.5rem 0;
+  text-align: right;
+
+  span {
+    color: #FF8906; /* Mantiene el color naranja */
+    font-size: 1.2em; /* Aumenta ligeramente el tamaño */
+  }
 
   @media screen and (max-width: 768px) {
-    font-size: 0.75rem; /* Ajustar tamaño para pantallas pequeñas */
-    padding: 0.4rem 0.8rem; /* Espaciado interno reducido en pantallas pequeñas */
+    font-size: clamp(1.85rem, 1vw, 1.2rem);
   }
+
+  @media screen and (max-width: 480px) {
+  font-size: clamp(1.55rem, 1vw, 1.2rem);
+  text-align: left; /* Justifica el texto */
+}
+
 `;
