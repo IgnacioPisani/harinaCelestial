@@ -9,7 +9,7 @@ export const FeatureContainer = styled.div`
 		url(${DividerPic}); /* Imagen de fondo */
 
 	height: 110vh;
-	max-height: 600px;
+	max-height: 420px;
 	background-position: center;
 	background-size: cover;
 	display: flex;
@@ -27,6 +27,14 @@ export const FeatureContainer = styled.div`
 	p {
 		margin-bottom: 1rem;
 		font-size: clamp(1rem, 3vw, 2rem);
+	}
+			@media (max-width: 1000px) {
+		height: 30vh;
+	}
+
+	/* Ajustes para pantallas pequeñas */
+	@media (max-width: 480px) {
+		height: 20vh;
 	}
 `;
 
@@ -78,4 +86,6 @@ export const FeatureButton = styled.button`
 		transition: 0.2s ease-out;
 		cursor: pointer;
 	}
+
+
 `;
