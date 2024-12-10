@@ -101,7 +101,7 @@ export const HeroP = styled.p`
 
   @media screen and (max-width: 480px) {
   font-size: clamp(1.55rem, 1vw, 1.2rem);
-  text-align: left; /* Justifica el texto */
+  text-align: center; /* Justifica el texto */
 }
 
 `;

@@ -78,13 +78,22 @@
 }
 
 /* Media Queries para pantallas medianas */
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .about-us-section {
     flex-direction: column;
     text-align: center;
     height: auto; /* Ajusta la altura automáticamente */
     padding: 20px;
   }
+
+  .left .about-us-text {
+    margin-left: 0px;
+  }
+  
+  .right .about-us-text {
+    margin-left: 0px;
+  }
+  
 
   .about-us-text h2 {
     font-size: 6vw;
@@ -112,6 +121,14 @@
     font-size: 5vw;  /* Ajusta el tamaño de fuente para pantallas pequeñas */
     padding: 0 10px; /* Espacio aún más comprimido en pantallas pequeñas */
   }
+  .left .about-us-text {
+    margin-right: 0px;
+  }
+  
+  .right .about-us-text {
+    margin-left: 0px;
+  }
+  
 
   .about-us-section {
     padding: 15px;
