@@ -103,8 +103,8 @@
 
 .pb-product-name {
   font-size: 26px;
-  font-weight: 500;
-  color: #070707;
+  font-weight: bold;
+  color: #333;
 }
 
 /* Responsividad */
@@ -185,11 +185,7 @@
   margin-bottom: 10px;
 }
 
-.pb-product-name {
-  font-size: 26px;
-  font-weight: 500;
-  color: #070707;
-}
+
 
 /* Responsividad */
 @media (max-width: 1200px) {
