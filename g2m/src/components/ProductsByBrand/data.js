@@ -12,7 +12,7 @@ import CapannoliTirabuzon from '../../images/capannoli/fideos/tirabuzon.webp';
 import CapannoliH000 from '../../images/capannoli/harinas/h000.webp';
 import CapannoliH0000 from '../../images/capannoli/harinas/h0000.webp';
 import CapannoliHleudante from '../../images/capannoli/harinas/hleudante.webp';
-import CapannoliLogo from '../../images/capannoli/logo/capannoli.webp';
+import CapannoliLogo from '../../images/logos-brands/capannoli.webp';
 
 import FidelliCelentano from '../../images/fidelli/fideos/celentano.webp';
 import FidelliFusilli from '../../images/fidelli/fideos/fusilli.webp';
@@ -55,7 +55,7 @@ import CelestialAnillitosLimon from '../../images/celestial/galletas/anillitos-l
 import CelestialAnillitosVainilla from '../../images/celestial/galletas/anillitos-vainilla.webp';
 import CelestialBastones from '../../images/celestial/galletas/bastones.webp';
 import CelestialChips from '../../images/celestial/galletas/cookies-chips.webp';
-import CelestialLogo from '../../images/celestial/logo/celestial.webp';
+import CelestialLogo from '../../images/logos-brands/celestial.webp';
 
 export const data = [
   {
