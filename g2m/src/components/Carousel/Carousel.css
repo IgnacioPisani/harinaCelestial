@@ -1,3 +1,9 @@
+.carousel {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
 .product-card {
   position: relative;
   background: #f4f4f4;
@@ -14,7 +20,7 @@
 }
 
 .product-card img {
-  max-height: 700px;
+  max-height: 300px;
   max-width: 100%;
   object-fit: cover;
   display: block;
@@ -29,11 +35,11 @@
 
 .image-placeholder {
   width: 100%;
-  height: 300px; /* Ajusta el tamaño del placeholder */
+  height: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #e0e0e0; /* Color del placeholder */
+  background-color: #e0e0e0;
   font-size: 1rem;
   color: #999;
 }
@@ -43,8 +49,62 @@
   opacity: 1;
 }
 
-.carousel {
-  overflow: hidden; /* Oculta el desbordamiento del slider */
-  position: relative; /* Asegura un contexto para elementos posicionales */
-  width: 100%;
+/* Estilos para flechas personalizadas */
+.custom-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  z-index: 2;
+  cursor: pointer;
+  border-style: solid;
+  transition: transform 0.3s ease-in-out;
+}
+
+.custom-arrow.prev {
+  left: 20px;
+  border-width: 25px 30px 25px 0; /* Triángulo apuntando a la izquierda */
+  border-color: transparent #FF8806 transparent transparent; /* Color del triángulo */
+}
+
+.custom-arrow.next {
+  right: 20px;
+  border-width: 25px 0 25px 30px; /* Triángulo apuntando a la derecha */
+  border-color: transparent transparent transparent #FF8806; /* Color del triángulo */
+}
+
+.custom-arrow:hover {
+  transform: translateY(-50%) scale(1.1); /* Efecto hover */
+}
+
+
+.product-card img {
+  pointer-events: none; /* Desactiva interacción con la imagen */
+}
+
+.product-card * {
+  pointer-events: auto; /* Habilita interacción en elementos hijos si es necesario */
+}
+
+
+
+/* Ocultar las flechas predeterminadas */
+.slick-prev:before,
+.slick-next:before {
+  content: none; /* Elimina el contenido predeterminado */
+}
+
+/* Puntos de paginación */
+.slick-dots {
+  bottom: -20px; /* Ajusta la posición vertical */
+}
+
+.slick-dots li button:before {
+  font-size: 12px;
+  color: #333;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #000;
 }

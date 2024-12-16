@@ -1,20 +1,6 @@
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
-export const FooterContainer = styled.footer`
-	background-color: #FD8B06;
-	padding: 10px 0; /* Reducir el padding vertical */
-`;
-
-export const FooterWrap = styled.div`
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	max-width: 1300px;
-	margin: 0 auto;
-	padding: 0 20px; /* Reducir el padding horizontal */
-`;
 
 export const SocialMedia = styled.section`
 	max-width: 1300px;
@@ -52,7 +38,71 @@ export const SocialIcons = styled.div`
 	width: 200px; /* Reducir el ancho */
 `;
 
+
+export const FooterContainer = styled.footer`
+  background-color: #FF8806;
+  padding: 20px 0;
+  color: #fff;
+`;
+
+export const FooterWrap = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  width: 100%;
+
+  @media screen and (max-width: 820px) {
+    flex-direction: column; /* Cambiar la dirección a columna */
+    text-align: center; /* Alinear el contenido centrado */
+  }
+`;
+
+export const FooterSection = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  &:nth-child(1),
+  &:nth-child(3) {
+    align-items: center; /* Alinear al centro para pantallas pequeñas */
+  }
+`;
+
+export const FooterContact = styled.p`
+  margin: 5px 0;
+  font-size: 14px;
+  font-weight: bold;
+`;
+
+export const FooterLogo = styled.div`
+  img {
+    width: 150px; /* Tamaño base */
+    max-width: 100%; /* Escalar en pantallas pequeñas */
+    height: auto;
+  }
+`;
+
+
+export const FooterIcons = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  a {
+    color: #fff;
+    font-size: 24px;
+    margin: 0 10px;
+  }
+`;
+
 export const SocialIconLink = styled.a`
-	color: #fff;
-	font-size: 24px; /* Reducir el tamaño de los íconos */
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: #ff4500;
+  }
 `;
