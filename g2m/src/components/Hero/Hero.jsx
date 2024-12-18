@@ -13,12 +13,7 @@ function Hero() {
       <HeroContent>
         <Logo />
         <HeroItems>
-          <HeroP>
-          <span>CALIDAD </span> EN CADA GRANO.
-          </HeroP>
-          <HeroP>
-          <span>AMOR </span> EN CADA PLATO.
-          </HeroP>
+          <HeroP/>
         </HeroItems>
       </HeroContent>
     </HeroContainer>

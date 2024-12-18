@@ -7,6 +7,7 @@
 .about-us-section {
   display: flex;
   align-items: center;
+  font-weight: bold;
   justify-content: space-between;
   height: 100vh;
   padding: 40px;
@@ -39,13 +40,14 @@
 
 .about-us-text h2 {
   color: #FF8806;
-  font-size: 5vw;  /* Tamaño relativo para que sea responsive */
+  font-weight: bold;
+  font-size: 5rem;  /* Tamaño relativo para que sea responsive */
   text-align: center;
   padding-bottom: 20px;
 }
 
 .about-us-text p {
-  font-size: 3vw;  /* Tamaño relativo para que sea responsive */
+  font-size: 2.5rem;  /* Tamaño relativo para que sea responsive */
   padding: 0 20px; /* Espacio comprimido en los costados */
 }
 

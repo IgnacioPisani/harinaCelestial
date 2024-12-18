@@ -12,7 +12,7 @@ import CapannoliTirabuzon from '../../images/capannoli/fideos/tirabuzon.webp';
 import CapannoliH000 from '../../images/capannoli/harinas/h000.webp';
 import CapannoliH0000 from '../../images/capannoli/harinas/h0000.webp';
 import CapannoliHleudante from '../../images/capannoli/harinas/hleudante.webp';
-import CapannoliLogo from '../../images/capannoli/logo/capannoli.webp';
+import CapannoliLogo from '../../images/logos-brands/capannoli.webp';
 
 import FidelliCelentano from '../../images/fidelli/fideos/celentano.webp';
 import FidelliFusilli from '../../images/fidelli/fideos/fusilli.webp';
@@ -32,6 +32,7 @@ import CelestialHI000preparada from '../../images/celestial/harinas-industriales
 import CelestialH000 from '../../images/celestial/harinas/h000.webp';
 import CelestialH0000 from '../../images/celestial/harinas/h0000.webp';
 import CelestialHleudante from '../../images/celestial/harinas/hleudante.webp';
+import CelestialHintegral from '../../images/celestial/harinas/hintegral.webp';
 import CelestialCaracolito from '../../images/celestial/fideos/caracolito.webp';
 import CelestialCelentano from '../../images/celestial/fideos/celentano.webp';
 import CelestialCodos from '../../images/celestial/fideos/codos.webp';
@@ -50,15 +51,25 @@ import CelestialBizcochueloVain from '../../images/celestial/preparaciones/bizco
 import CelestialBizcochueloChoc from '../../images/celestial/preparaciones/bizcochuelo-choc.webp';
 import CelestialÑoquis from '../../images/celestial/preparaciones/ñoquis.webp';
 import CelestialPizza from '../../images/celestial/preparaciones/pizza.webp';
-import CelestialAnillitos from '../../images/celestial/galletas/anillitos.webp';
+import CelestialAnillitosLimon from '../../images/celestial/galletas/anillitos-limon.webp';
+import CelestialAnillitosVainilla from '../../images/celestial/galletas/anillitos-vainilla.webp';
 import CelestialBastones from '../../images/celestial/galletas/bastones.webp';
-import CelestialLogo from '../../images/celestial/logo/celestial.webp';
+import CelestialChips from '../../images/celestial/galletas/cookies-chips.webp';
+import CelestialLogo from '../../images/logos-brands/celestial.webp';
 
 export const data = [
   {
     name: "Capannoli",
     logo: CapannoliLogo,
     sections: [
+      {
+        name: "Harinas",
+        products: [
+          { name: "Harina 000", img: CapannoliH000 },
+          { name: "Harina 0000", img: CapannoliH0000 },
+          { name: "Harina Leudante", img: CapannoliHleudante },
+        ],
+      },
       {
         name: "Fideos",
         products: [
@@ -72,14 +83,6 @@ export const data = [
           { name: "Spaghetti", img: CapannoliSpaghetti },
           { name: "Tallarín", img: CapannoliTallarin },
           { name: "Tirabuzón", img: CapannoliTirabuzon },
-        ],
-      },
-      {
-        name: "Harinas",
-        products: [
-          { name: "000", img: CapannoliH000 },
-          { name: "0000", img: CapannoliH0000 },
-          { name: "Leudante", img: CapannoliHleudante },
         ],
       },
     ],
@@ -110,19 +113,21 @@ export const data = [
       {
         name: "Harinas Industriales",
         products: [
-          { name: "000", img: CelestialHI000 },
-          { name: "0000", img: CelestialHI0000 },
-          { name: "000 Plus", img: CelestialHI000plus },
-          { name: "000 Premium", img: CelestialHI000premium },
-          { name: "000 Preparada", img: CelestialHI000preparada },
+          { name: "Harina 000 Standard", img: CelestialHI000 },
+          { name: "Harina 000", img: CelestialHI000plus },
+          { name: "Harina 000 Premium", img: CelestialHI000premium },
+          { name: "Harina 000 Preparada", img: CelestialHI000preparada },
+          { name: "Harina 0000", img: CelestialHI0000 },
         ],
       },
       {
         name: "Harinas",
         products: [
-          { name: "000", img: CelestialH000 },
-          { name: "0000", img: CelestialH0000 },
-          { name: "Leudante", img: CelestialHleudante },
+          { name: "Harina 000", img: CelestialH000 },
+          { name: "Harina 0000", img: CelestialH0000 },
+          { name: "Harina Leudante", img: CelestialHleudante },
+          { name: "Harina Integral", img: CelestialHintegral},
+
         ],
       },
       {
@@ -147,8 +152,8 @@ export const data = [
         products: [
           { name: "Garbanzos", img: CelestialGarbanzos },
           { name: "Lentejas", img: CelestialLentejas },
-          { name: "Pizingallo", img: CelestialPisingallo },
           { name: "Porotos", img: CelestialPorotos },
+          { name: "Pizingallo", img: CelestialPisingallo },
         ],
       },
       {
@@ -163,8 +168,10 @@ export const data = [
       {
         name: "Galletas",
         products: [
-          { name: "Anillitos", img: CelestialAnillitos },
+          { name: "Anillitos Limón", img: CelestialAnillitosLimon },
+          { name: "Anillitos Vainilla", img: CelestialAnillitosVainilla },
           { name: "Bastones", img: CelestialBastones },
+          { name: "Cookies con Chips", img: CelestialChips },
         ],
       },
     ],

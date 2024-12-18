@@ -1,6 +1,7 @@
 /* Contenedor principal */
 .pb-container {
   padding: 20px;
+  background: #f4f4f4;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -12,21 +13,35 @@
   padding-bottom: 20px;
 }
 
-/* Encabezado con logo */
 .pb-brand-header {
   display: flex;
   justify-content: center;
-  padding-top: 34px;
   align-items: center;
+  padding-top: 34px;
   height: 140px;
   margin-bottom: 20px;
+  gap: 20px; /* Espaciado entre elementos */
 }
 
 .pb-brand-logo {
+  max-height: 93%;
+  max-width: 100%;
+  object-fit: contain;
+}
+.pb-brand-logo-brand{
+  padding-top: 40px;
   max-height: 100%;
   max-width: 100%;
   object-fit: contain;
 }
+
+.pb-brand-divider {
+  width: 3px; /* Ancho de la barra */
+  height: 55%; /* Altura de la barra */
+  background-color: orange; /* Color de la barra */
+  align-self: flex-end; /* Posiciona la barra al fondo del contenedor */
+}
+
 
 /* Título de sección */
 .pb-section-title {
@@ -50,11 +65,11 @@
 
 .pb-tab-button {
   background-color: white;
-  border: none;
   padding: 10px 20px;
   cursor: pointer;
-  font-size: 26px;
+  font-size: 20px;
   border-radius: 35px;
+  border: 3px solid #ff7f00;
   color: #ff7f00;
   transition: background-color 0.3s, color 0.3s;
   font-weight: bold;
@@ -103,8 +118,8 @@
 
 .pb-product-name {
   font-size: 26px;
-  font-weight: 500;
-  color: #070707;
+  font-weight: bold;
+  color: #333;
 }
 
 /* Responsividad */
@@ -185,11 +200,7 @@
   margin-bottom: 10px;
 }
 
-.pb-product-name {
-  font-size: 26px;
-  font-weight: 500;
-  color: #070707;
-}
+
 
 /* Responsividad */
 @media (max-width: 1200px) {

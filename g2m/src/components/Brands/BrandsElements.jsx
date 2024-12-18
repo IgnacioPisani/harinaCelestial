@@ -4,7 +4,8 @@ import styled from 'styled-components';
 export const BrandsHeading = styled.h1`
   text-align: center; 
   color: #FF8806; 
-  font-size: 7rem; 
+  font-weight: bold;
+  font-size: 5rem;  
   margin-bottom: 30px;  
     @media (max-width: 1200px) {
     font-size: 6rem;

@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 import ImgBg from '../../images/hero/hero-harina-industrial.jpg';
 import ImgLogo from '../../images/logo-g2m/g2mnaranja.webp';
+import ImgHeroP from '../../images/eslogan/tu-familia.webp';
+
 
 export const HeroContainer = styled.div`
   background: linear-gradient(
@@ -44,7 +46,6 @@ export const Logo = styled.img.attrs({
   }
 
   @media screen and (max-width: 480px) {
-    bottom: 140%; /* Centra verticalmente */
     left: 50%; /* Centra horizontalmente */
     transform: translate(-50%, 50%); /* Asegura el centrado exacto */
     width: 140px; /* Ajusta el tamaño del logo */
@@ -80,28 +81,24 @@ export const HeroItems = styled.div`
   gap: 0.5rem; /* Espaciado entre los párrafos */
 `;
 
-export const HeroP = styled.p`
-  font-size: clamp(2.85rem, 1.25vw, 1.5rem);
-  color: #fff;
-  text-transform: uppercase;
-  font-weight: bold;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1.2);
-  margin: 0;
-  padding: 0.5rem 0;
-  text-align: right;
-
-  span {
-    color: #FF8906; /* Mantiene el color naranja */
-    font-size: 1.2em; /* Aumenta ligeramente el tamaño */
-  }
+export const HeroP = styled.img.attrs({
+  src: ImgHeroP,
+  alt: "Eslogan de G2M",
+})`
+  position: absolute;
+  bottom: 4rem; /* Coloca el logo encima de los párrafos */
+  right: 2rem; /* Ajusta al borde derecho */
+  width: 300px;
+  height: auto;
 
   @media screen and (max-width: 768px) {
-    font-size: clamp(1.85rem, 1vw, 1.2rem);
+    bottom: 3rem;
+    width: 170px;
   }
 
   @media screen and (max-width: 480px) {
-  font-size: clamp(1.55rem, 1vw, 1.2rem);
-  text-align: center; /* Justifica el texto */
-}
-
+    left: 50%; /* Centra horizontalmente */
+    transform: translate(-50%, 50%); /* Asegura el centrado exacto */
+    width: 110px; /* Ajusta el tamaño del logo */
+  }
 `;

@@ -7,7 +7,7 @@ const faqData = [
     answer: "Si, hacemos envíos a toda Córdoba, nosotros nos enfocamos en el centro y alrededores, pero también llega al interior. Consulta por tu caso puntual!",
   },
   {
-    question: "¿Cada cuanto hacen envios?",
+    question: "¿Cada cuánto hacen envios?",
     answer: "Al centro de Córdoba y alrededores hacemos envíos diarios ya que contamos con una flota de camiones y descarga propia.",
   },
   {

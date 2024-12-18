@@ -17,6 +17,7 @@
 .faq-title {
     color: #FF8806;
     font-size: 5rem;
+    font-weight: bold;
     margin-bottom: 30px;
     text-align: center;
 }
@@ -24,6 +25,7 @@
 .faq-item {
     width: 100%;
     padding: 20px;
+    font-weight: bold;
     cursor: pointer;
     border-bottom: 1px solid #ddd;
     transition: background-color 0.3s ease;
@@ -35,6 +37,7 @@
 
 .faq-question {
     color: #FF8806;
+    font-weight: bold;
     font-size: 3rem;
     margin: 0;
 }

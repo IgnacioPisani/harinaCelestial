@@ -34,7 +34,7 @@ const AboutUs = () => {
     <section className="about-us">
       <div className="about-us-section left">
         <div className="about-us-text">
-          <h2>Sobre Nosotros</h2>
+          <h2 className="about-us-title">Sobre Nosotros</h2>
           <p>
             Representamos con orgullo a Molinos Río Segundo, especializándonos en la venta de harina y productos masivos para soluciones industriales y de consumo final.
           </p>
@@ -44,7 +44,7 @@ const AboutUs = () => {
       
       <div className="about-us-section right">
         <div className="about-us-text">
-          <h2>Nuestra Experiencia</h2>
+          <h2  className="about-us-title">Nuestra Experiencia</h2>
           <p>
             Con más de 20 años de trayectoria en el mercado, contamos con una sólida experiencia que abarca tres generaciones dedicadas a la venta y distribución de harina.
           </p>
@@ -54,7 +54,7 @@ const AboutUs = () => {
 
       <div className="about-us-section left">
         <div className="about-us-text">
-          <h2>Nuestro Compromiso</h2>
+          <h2  className="about-us-title">Nuestro Compromiso</h2>
           <p>
             Nos distinguimos tanto por la calidad de nuestros productos como por el servicio al cliente que brindamos, adaptado a las necesidades de cada uno de nuestros socios comerciales.
           </p>

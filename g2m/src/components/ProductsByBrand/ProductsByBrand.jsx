@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import LogoG2m from '../../images/logos-brands/g2mnaranjacortado.webp';
 import './ProductsByBrand.css';
 
 const ProductsByBrand = ({ data }) => {
@@ -33,8 +34,11 @@ const ProductsByBrand = ({ data }) => {
       <div className="pb-brand-section">
         {/* Encabezado de la marca */}
         <div className="pb-brand-header">
-          <img src={data.logo} alt={`${data.name} logo`} className="pb-brand-logo" />
-        </div>
+  <img src={LogoG2m} alt={`${data.name} G2M logo`} className="pb-brand-logo" />
+  <div className="pb-brand-divider"></div>
+  <img src={data.logo} alt={`${data.name}`} className="pb-brand-logo-brand" />
+</div>
+
 
         {/* Pestañas */}
         <div className="pb-tabs">

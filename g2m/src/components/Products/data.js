@@ -11,7 +11,7 @@ export const productData = [
 	{
 		img: tripleCero,
 		alt: 'Harina',
-		name: 'Harina 000',
+		name: 'Harina 000 Standard',
 	},
 	{
 		img: tripleCeroPreparada,
@@ -26,7 +26,7 @@ export const productData = [
 	{
 		img: tripleCeroPlus,
 		alt: 'Harina',
-		name: 'Harina 000 Plus',
+		name: 'Harina 000',
 	},
 	{
 		img: cuatroCero,
