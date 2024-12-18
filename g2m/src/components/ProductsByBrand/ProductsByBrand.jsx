@@ -77,12 +77,17 @@ const ProductsByBrand = ({ data }) => {
             className={`pb-tab-content ${activeTab === sectionIndex ? 'pb-active' : ''}`}
           >
             <div className="pb-product-grid">
-              {section.products.map((product) => (
-                <div key={product.name} className="pb-product-card">
-                  <img className="pb-product-image" src={product.img} alt={product.name} />
-                  <p className="pb-product-name">{product.name}</p>
-                </div>
-              ))}
+            {section.products.map((product) => (
+  <div key={product.name} className="pb-product-card">
+    <img className="pb-product-image" src={product.img} alt={product.name} />
+    <p className="pb-product-name">{product.name}</p>
+    {/* Contenedor para el manto negro y las especificaciones */}
+    <div className="pb-product-overlay">
+      <p>{product.specifications || 'Especificaciones no disponibles'}</p>
+    </div>
+  </div>
+))}
+
             </div>
           </div>
         ))}
