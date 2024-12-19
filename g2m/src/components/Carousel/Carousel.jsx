@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -16,7 +16,7 @@ const Arrow = ({ className, style, onClick, direction }) => (
 
 const Carousel = ({ data }) => {
   const [loadedImages, setLoadedImages] = useState({});
-  const [autoplay, setAutoplay] = useState(true);
+  const sliderRef = useRef(null);
 
   const handleImageLoad = (index) => {
     setLoadedImages((prev) => ({ ...prev, [index]: true }));
@@ -29,7 +29,7 @@ const Carousel = ({ data }) => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
-    pauseOnHover: true, // Pausa el carrusel al hacer hover
+    pauseOnHover: false, // Desactivamos el comportamiento global
     draggable: false,
     swipe: false,
     centerMode: true,
@@ -46,23 +46,26 @@ const Carousel = ({ data }) => {
       },
     ],
   };
-  
+
+  const handleMouseEnter = () => {
+    sliderRef.current.slickPause(); // Pausa el carrusel al hacer hover en la tarjeta
+  };
+
+  const handleMouseLeave = () => {
+    sliderRef.current.slickPlay(); // Reanuda el carrusel al salir del hover
+  };
 
   return (
     <div className="carousel">
-      <Slider
-        {...settings}
-        beforeChange={() => setAutoplay(true)}
-        afterChange={() => setAutoplay(true)}
-      >
+      <Slider ref={sliderRef} {...settings}>
         {data.map((product, index) => (
           <div
             key={index}
             className={`product-card ${loadedImages[index] ? "loaded" : "loading"}`}
-            onMouseEnter={() => setAutoplay(false)}
-            onMouseLeave={() => setAutoplay(true)}
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
           >
-            <a href={product.link} >
+            <a href={product.link}>
               <img
                 src={product.img}
                 alt={product.alt}
