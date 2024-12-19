@@ -103,6 +103,7 @@ const Carousel = ({ data }) => {
                 <img
                   src={product.img}
                   alt={product.alt}
+                  loading="lazy"
                   onLoad={() => handleImageLoad(index)}
                   className={loadedImages[index] ? "loaded" : ""}
                 />
