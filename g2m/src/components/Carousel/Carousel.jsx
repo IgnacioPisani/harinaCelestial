@@ -19,8 +19,8 @@ const Carousel = ({ data }) => {
   const [isInitialLoad, setIsInitialLoad] = useState(true);
   const sliderRef = useRef(null);
 
+  // Preload first three images
   useEffect(() => {
-    // Precarga las primeras 3 imágenes
     const preloadFirstImages = async () => {
       const firstThreeImages = data.slice(0, 3);
       await Promise.all(
@@ -30,7 +30,7 @@ const Carousel = ({ data }) => {
               const img = new Image();
               img.src = product.img;
               img.onload = () => {
-                setLoadedImages(prev => ({ ...prev, [index]: true }));
+                setLoadedImages((prev) => ({ ...prev, [index]: true }));
                 resolve();
               };
               img.onerror = resolve;
@@ -43,6 +43,22 @@ const Carousel = ({ data }) => {
     preloadFirstImages();
   }, [data]);
 
+  // Pause/Play carousel based on page visibility
+  useEffect(() => {
+    const handleVisibilityChange = () => {
+      if (document.hidden) {
+        sliderRef.current?.slickPause();
+      } else if (!isInitialLoad) {
+        sliderRef.current?.slickPlay();
+      }
+    };
+
+    document.addEventListener("visibilitychange", handleVisibilityChange);
+    return () => {
+      document.removeEventListener("visibilitychange", handleVisibilityChange);
+    };
+  }, [isInitialLoad]);
+
   const handleImageLoad = (index) => {
     setLoadedImages((prev) => ({ ...prev, [index]: true }));
   };
@@ -52,13 +68,13 @@ const Carousel = ({ data }) => {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
-    autoplay: !isInitialLoad, // No autoplay hasta que carguen las primeras imágenes
-    autoplaySpeed: 3000, // Un poco más lento para mejor experiencia
+    autoplay: !isInitialLoad,
+    autoplaySpeed: 3000,
     pauseOnHover: false,
-    draggable: true, // Permitimos drag para mejor UX
-    swipe: true, // Permitimos swipe para mejor UX en móvil
+    draggable: true,
+    swipe: true,
     centerMode: true,
-    lazyLoad: "progressive", // Cambiamos a progressive para mejor performance
+    lazyLoad: "progressive",
     prevArrow: <Arrow direction="prev" />,
     nextArrow: <Arrow direction="next" />,
     responsive: [
@@ -67,7 +83,7 @@ const Carousel = ({ data }) => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          centerMode: false, // Desactivamos centerMode en móvil
+          centerMode: false,
         },
       },
     ],
