@@ -12,26 +12,31 @@ export const productData = [
 		img: tripleCero,
 		alt: 'Harina',
 		name: 'Harina 000 Standard',
+		link: '/brands/celestial'
 	},
 	{
 		img: tripleCeroPreparada,
 		alt: 'Harina',
 		name: 'Harina 000 Preparada',
+		link: '/brands/celestial'
 	},
 	{
 		img: tripleCeroPremium,
 		alt: 'Harina',
 		name: 'Harina 000 Premium',
+		link: '/brands/celestial'
 	},
 	{
 		img: tripleCeroPlus,
 		alt: 'Harina',
 		name: 'Harina 000',
+		link: '/brands/celestial'
 	},
 	{
 		img: cuatroCero,
 		alt: 'Harina',
 		name: 'Harina 0000',
+		link: '/brands/celestial'
 	},
 	
 ];
