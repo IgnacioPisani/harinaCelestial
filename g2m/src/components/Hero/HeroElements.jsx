@@ -16,7 +16,7 @@ export const HeroContainer = styled.div`
   background-size: cover;
   display: flex;
   position: relative; /* Habilita posicionamiento absoluto para los hijos */
-  padding: 2rem;
+  padding: 2rem 2rem 2rem 2rem; /* Modifica el padding-right a 3rem */
   width: 100%; /* Asegura que el contenedor ocupe el ancho completo */
   overflow-x: hidden; /* Evita el desbordamiento horizontal */
 
@@ -39,6 +39,7 @@ export const Logo = styled.img.attrs({
   right: 2rem; /* Ajusta al borde derecho */
   width: 350px;
   height: auto;
+  padding: 1rem;
 
   @media screen and (max-width: 768px) {
     bottom: 9rem;
@@ -55,7 +56,7 @@ export const Logo = styled.img.attrs({
 export const HeroContent = styled.div`
   position: absolute;
   bottom: 4rem; /* Posición inicial */
-  right: 2rem; /* Alineados a la derecha */
+  right: 3rem; /* Alineados a la derecha */
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -87,7 +88,7 @@ export const HeroP = styled.img.attrs({
 })`
   position: absolute;
   bottom: 4rem; /* Coloca el logo encima de los párrafos */
-  right: 2rem; /* Ajusta al borde derecho */
+  right: 3rem; /* Ajusta al borde derecho */
   width: 300px;
   height: auto;
 
