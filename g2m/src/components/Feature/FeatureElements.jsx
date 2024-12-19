@@ -10,8 +10,8 @@ export const FeatureContainer = styled.div`
 		url(${DividerPic}); /* Imagen de fondo */
 	background-color: #f4f4f4; /* Color de fondo para cubrir cualquier espacio adicional */
 
-	height: 130vh; /* Incrementado para ocupar más espacio vertical */
-	max-height: 500px; /* Ajustado para pantallas grandes */
+	height: 100vh; /* Incrementado para ocupar más espacio vertical */
+	// max-height: 500px; /* Ajustado para pantallas grandes */
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
