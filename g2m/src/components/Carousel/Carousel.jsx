@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -16,7 +16,32 @@ const Arrow = ({ className, style, onClick, direction }) => (
 
 const Carousel = ({ data }) => {
   const [loadedImages, setLoadedImages] = useState({});
+  const [isInitialLoad, setIsInitialLoad] = useState(true);
   const sliderRef = useRef(null);
+
+  useEffect(() => {
+    // Precarga las primeras 3 imágenes
+    const preloadFirstImages = async () => {
+      const firstThreeImages = data.slice(0, 3);
+      await Promise.all(
+        firstThreeImages.map(
+          (product, index) =>
+            new Promise((resolve) => {
+              const img = new Image();
+              img.src = product.img;
+              img.onload = () => {
+                setLoadedImages(prev => ({ ...prev, [index]: true }));
+                resolve();
+              };
+              img.onerror = resolve;
+            })
+        )
+      );
+      setIsInitialLoad(false);
+    };
+
+    preloadFirstImages();
+  }, [data]);
 
   const handleImageLoad = (index) => {
     setLoadedImages((prev) => ({ ...prev, [index]: true }));
@@ -27,13 +52,13 @@ const Carousel = ({ data }) => {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    pauseOnHover: false, // Desactivamos el comportamiento global
-    draggable: false,
-    swipe: false,
+    autoplay: !isInitialLoad, // No autoplay hasta que carguen las primeras imágenes
+    autoplaySpeed: 3000, // Un poco más lento para mejor experiencia
+    pauseOnHover: false,
+    draggable: true, // Permitimos drag para mejor UX
+    swipe: true, // Permitimos swipe para mejor UX en móvil
     centerMode: true,
-    lazyLoad: "ondemand",
+    lazyLoad: "progressive", // Cambiamos a progressive para mejor performance
     prevArrow: <Arrow direction="prev" />,
     nextArrow: <Arrow direction="next" />,
     responsive: [
@@ -42,17 +67,20 @@ const Carousel = ({ data }) => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          centerMode: false, // Desactivamos centerMode en móvil
         },
       },
     ],
   };
 
   const handleMouseEnter = () => {
-    sliderRef.current.slickPause(); // Pausa el carrusel al hacer hover en la tarjeta
+    sliderRef.current?.slickPause();
   };
 
   const handleMouseLeave = () => {
-    sliderRef.current.slickPlay(); // Reanuda el carrusel al salir del hover
+    if (!isInitialLoad) {
+      sliderRef.current?.slickPlay();
+    }
   };
 
   return (
@@ -66,16 +94,21 @@ const Carousel = ({ data }) => {
             onMouseLeave={handleMouseLeave}
           >
             <a href={product.link}>
-              <img
-                src={product.img}
-                alt={product.alt}
-                onLoad={() => handleImageLoad(index)}
-                style={{ display: loadedImages[index] ? "block" : "none" }}
-              />
-              {!loadedImages[index] && (
-                <div className="image-placeholder">Cargando...</div>
-              )}
-              <h3 style={{ fontWeight: "bold" }}>{product.name}</h3>
+              <div className="image-container">
+                {!loadedImages[index] && (
+                  <div className="image-placeholder">
+                    <div className="loading-spinner"></div>
+                  </div>
+                )}
+                <img
+                  src={product.img}
+                  alt={product.alt}
+                  loading="lazy"
+                  onLoad={() => handleImageLoad(index)}
+                  className={loadedImages[index] ? "loaded" : ""}
+                />
+              </div>
+              <h3>{product.name}</h3>
             </a>
           </div>
         ))}

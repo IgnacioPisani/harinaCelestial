@@ -18,7 +18,7 @@ export const ProductsHeading = styled.h1`
   color: #FF8806; 
   font-weight: bold;
   font-size: 5rem; 
-  padding: 5.5rem 0 4.5rem; /* Más espacio arriba (3rem) que abajo (2rem) */
+  padding: 4rem 0 2rem; /* Más espacio arriba (3rem) que abajo (2rem) */
 
   @media (max-width: 1200px) {
     font-size: 6rem;
