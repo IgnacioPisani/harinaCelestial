@@ -19,7 +19,7 @@ function Products({ heading, data }) {
     	<ProductsContainer>
       <ProductsHeading>{heading}</ProductsHeading>
         <Carousel data={data} />
-        </ProductsContainer>
+      </ProductsContainer>
     
   );
 }

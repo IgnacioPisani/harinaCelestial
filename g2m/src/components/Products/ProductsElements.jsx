@@ -18,19 +18,24 @@ export const ProductsHeading = styled.h1`
   color: #FF8806; 
   font-weight: bold;
   font-size: 5rem; 
-  margin-bottom: 20px; 
-    @media (max-width: 1200px) {
+  padding: 5.5rem 0 4.5rem; /* Más espacio arriba (3rem) que abajo (2rem) */
+
+  @media (max-width: 1200px) {
     font-size: 6rem;
+    padding: 4rem 0 2.5rem; 
   }
 
   @media (max-width: 768px) {
     font-size: 5rem;
+    padding: 2.5rem 0 1.5rem; 
   }
 
   @media (max-width: 480px) {
     font-size: 4rem;
+    padding: 2rem 0 1rem; 
   } 
 `;
+
 
 
 export const ProductsTitle = styled.h2`

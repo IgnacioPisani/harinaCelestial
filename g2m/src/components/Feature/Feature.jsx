@@ -1,15 +1,20 @@
 import React from 'react';
 import { FeatureContainer, FeatureButton } from './FeatureElements';
 
-// Push preuba
 function Feature() {
-	return (
-		<FeatureContainer>
-			{/* <h1>Pizza of the Day</h1>
-			<p>Truffle alfredo sauce topped with 24 carat gold dust.</p>
-			<FeatureButton>Order Now</FeatureButton> */}
-		</FeatureContainer>
-	);
+    const handleClick = () => {
+        window.open('https://forms.gle/jLZ5KAZtkUi2HnWS8', '_blank', 'noopener noreferrer');
+    };
+
+    return (
+        <FeatureContainer>
+            <h1>Venta de insumos para panadería</h1>
+            {/* <p>Dejanos tu contacto</p> */}
+            <FeatureButton onClick={handleClick}>
+                Envíanos tu consulta
+            </FeatureButton>
+        </FeatureContainer>
+    );
 }
 
 export default Feature;
