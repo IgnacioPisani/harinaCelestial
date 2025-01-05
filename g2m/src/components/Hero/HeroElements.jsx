@@ -1,24 +1,38 @@
 import styled from 'styled-components';
-import ImgBg from '../../images/hero/hero-harina-industrial.jpg';
+// import ImgBg from '../../images/hero/hero-harina-industrial.jpg';
+import ImgBg from '../../images/hero/hero-panes.jpg';
 import ImgLogo from '../../images/logo-g2m/g2mnaranja.webp';
-import ImgHeroP from '../../images/eslogan/tu-familia.webp';
 
-
+// Contenedor principal del Hero
 export const HeroContainer = styled.div`
-  background: linear-gradient(
-      to top,
-      rgba(244, 244, 244, 1) 0%,
-      rgba(244, 244, 244, 0) 20%
-    ),
-    url(${ImgBg});
+  background: url(${ImgBg});
   height: 100vh;
   background-position: center;
   background-size: cover;
   display: flex;
-  position: relative; /* Habilita posicionamiento absoluto para los hijos */
-  padding: 2rem 2rem 2rem 2rem; /* Modifica el padding-right a 3rem */
-  width: 100%; /* Asegura que el contenedor ocupe el ancho completo */
-  overflow-x: hidden; /* Evita el desbordamiento horizontal */
+  justify-content: center; /* Centra el contenido horizontalmente */
+  align-items: center; /* Centra el contenido verticalmente */
+  position: relative;
+  width: 100%;
+  overflow-x: hidden;
+
+  /* Superposición oscura */
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Fondo oscuro con transparencia */
+    z-index: 1;
+  }
+
+  /* Asegura que el contenido esté sobre la superposición */
+  > * {
+    position: relative;
+    z-index: 2;
+  }
 
   @media screen and (max-width: 768px) {
     background-position: 50% center;
@@ -29,77 +43,67 @@ export const HeroContainer = styled.div`
   }
 `;
 
-
+// Logo centrado
 export const Logo = styled.img.attrs({
   src: ImgLogo,
   alt: "Logo de G2M",
 })`
-  position: absolute;
-  bottom: 14rem; /* Coloca el logo encima de los párrafos */
-  right: 2rem; /* Ajusta al borde derecho */
-  width: 350px;
+  width: 260px;
   height: auto;
-  padding: 1rem;
+  margin-bottom: 30px; /* Agrega espacio debajo del logo */
+  // padding: 30px; /* Agrega espacio alrededor del logo */
 
   @media screen and (max-width: 768px) {
-    bottom: 9rem;
     width: 220px;
+    padding: 15px; /* Ajusta el padding en pantallas más pequeñas */
   }
 
   @media screen and (max-width: 480px) {
-    left: 50%; /* Centra horizontalmente */
-    transform: translate(-50%, 50%); /* Asegura el centrado exacto */
-    width: 140px; /* Ajusta el tamaño del logo */
+    width: 140px;
+    padding: 10px; /* Ajusta el padding en pantallas aún más pequeñas */
   }
 `;
 
+
+// Contenido del Hero
 export const HeroContent = styled.div`
-  position: absolute;
-  bottom: 4rem; /* Posición inicial */
-  right: 3rem; /* Alineados a la derecha */
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
-  text-align: right;
-
-  @media screen and (max-width: 768px) {
-    bottom: 8rem; /* Los párrafos suben más */
-    right: 1rem;
-  }
+  align-items: center; /* Centra los elementos horizontalmente */
+  text-align: center;
 
   @media screen and (max-width: 480px) {
-    bottom: 40%; /* Ajusta la posición vertical para centrar */
-    right: 50%; /* Ajusta la posición horizontal para centrar */
-    transform: translate(50%, 50%); /* Centrado exacto */
-    align-items: center; /* Centra los párrafos */
-    text-align: center; /* Centra el texto */
+    gap: 1rem; /* Espaciado entre elementos en pantallas pequeñas */
   }
 `;
 
+// Elementos adicionales en el Hero (como slogan, texto, etc.)
 export const HeroItems = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 0.5rem; /* Espaciado entre los párrafos */
+  gap: 1rem;
 `;
 
-export const HeroP = styled.img.attrs({
-  src: ImgHeroP,
-  alt: "Eslogan de G2M",
-})`
-  position: absolute;
-  bottom: 4rem; /* Coloca el logo encima de los párrafos */
-  right: 3rem; /* Ajusta al borde derecho */
-  width: 300px;
-  height: auto;
+// Estilo para el texto del Hero
+export const HeroP = styled.p`
+  font-size: 1.3rem;
+  // font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  // text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Añade un efecto de sombra al texto */
+  line-height: 1.5;
+
+  /* Resalta las palabras específicas */
+  span {
+    color: #e67e00; /* Color naranja para las palabras resaltadas */
+    font-size: 1.6rem;
+  }
 
   @media screen and (max-width: 768px) {
-    bottom: 3rem;
-    width: 170px;
+    font-size: 1.5rem;
   }
 
   @media screen and (max-width: 480px) {
-    left: 50%; /* Centra horizontalmente */
-    transform: translate(-50%, 50%); /* Asegura el centrado exacto */
-    width: 110px; /* Ajusta el tamaño del logo */
+    font-size: 1rem;
   }
 `;
