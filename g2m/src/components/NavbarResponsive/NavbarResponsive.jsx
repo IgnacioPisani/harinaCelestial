@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -9,6 +10,7 @@ import './NavbarResponsive.css';
 
 function NavbarResponsive() {
   const [isScrolled, setIsScrolled] = useState(false);
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -26,12 +28,15 @@ function NavbarResponsive() {
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
+
   }, []);
+  const isNavbarScrolled = isScrolled || location.pathname !== '/';
+
 
   return (
     <Navbar
       expand="lg"
-      className={`fixed-top custom-navbar ${isScrolled ? 'navbar-scrolled' : 'navbar-transparent'}`}
+      className={`fixed-top custom-navbar ${isNavbarScrolled ? 'navbar-scrolled' : ''}`}
     >
       <Container fluid className="px-0">
         <Navbar.Brand href="/" className="d-flex align-items-center">
