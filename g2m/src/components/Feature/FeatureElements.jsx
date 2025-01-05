@@ -4,7 +4,7 @@ import DividerPic from '../../images/divisores-pantalla/panes.jpg';
 
 export const FeatureContainer = styled.div`
 	background-image: 
-		linear-gradient(to bottom, rgba(244, 244, 244, 1) 0%, rgba(244, 244, 244, 0) 20%), /* Gradiente inferior corto */
+		linear-gradient(to bottom, rgba(244, 244, 244, 1) 0%, rgba(244, 244, 244, 0) 2%), /* Gradiente inferior corto */
 	    linear-gradient(to top, rgba(244, 244, 244, 1) 0%, rgba(244, 244, 244, 0) 20%), /* Gradiente superior corto */
 		url(${DividerPic}); /* Imagen de fondo */
 	background-color: #f4f4f4; /* Color de fondo para cubrir cualquier espacio adicional */
