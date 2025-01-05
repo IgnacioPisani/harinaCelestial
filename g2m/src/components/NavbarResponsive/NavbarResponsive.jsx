@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
+import React, { useState, useEffect, useRef } from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -10,59 +9,82 @@ import './NavbarResponsive.css';
 
 function NavbarResponsive() {
   const [isScrolled, setIsScrolled] = useState(false);
-  const location = useLocation();
+  const [dropdownOpen, setDropdownOpen] = useState(null); // Controla qué dropdown está abierto
+  const closeTimeoutRef = useRef(null); // Referencia para controlar el temporizador
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
+      setIsScrolled(window.scrollY > 50);
     };
 
-    // Agrega el listener de scroll
     window.addEventListener('scroll', handleScroll);
 
-    // Limpia el listener cuando el componente se desmonta
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-
   }, []);
-  const isNavbarScrolled = isScrolled || location.pathname !== '/';
 
+  const handleDropdownClick = (id) => {
+    clearTimeout(closeTimeoutRef.current); // Cancelar cualquier cierre pendiente
+    setDropdownOpen((prev) => (prev === id ? null : id)); // Alterna entre abrir y cerrar
+  };
+
+  const handleMouseLeave = () => {
+    // Inicia un temporizador para cerrar después de 2 segundos
+    closeTimeoutRef.current = setTimeout(() => {
+      setDropdownOpen(null);
+    }, 1000);
+  };
+
+  const handleMouseEnter = () => {
+    // Cancela el temporizador si el mouse vuelve al menú
+    clearTimeout(closeTimeoutRef.current);
+  };
 
   return (
     <Navbar
       expand="lg"
-      className={`fixed-top custom-navbar ${isNavbarScrolled ? 'navbar-scrolled' : ''}`}
+      className={`fixed-top custom-navbar ${isScrolled ? 'navbar-scrolled' : 'navbar-transparent'}`}
     >
       <Container fluid className="px-0">
         <Navbar.Brand href="/" className="d-flex align-items-center">
-          <img
-            src={Logo}
-            alt="Logo"
-            className="navbar-logo"
-          />
+          <img src={Logo} alt="Logo" className="navbar-logo" />
         </Navbar.Brand>
 
-        {/* Toggle para móviles */}
         <Navbar.Toggle
-  aria-controls="basic-navbar-nav"
-  className="navbar-dark"
-/>
+          aria-controls="basic-navbar-nav"
+          className="navbar-dark"/>
+
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link href="/" className="navbar-link">Inicio</Nav.Link>
-            <NavDropdown title={<span className="navbar-link">Marcas</span>} id="navbarScrollingDropdown">
+
+            {/* Dropdown para "Marcas" */}
+            <NavDropdown
+              title={<span className="navbar-link">Marcas</span>}
+              id="navbarScrollingDropdown1"
+              show={dropdownOpen === 'marcas'} // Controla si está abierto
+              onClick={() => handleDropdownClick('marcas')} // Se abre/cierra al hacer click
+              onMouseEnter={handleMouseEnter} // Cancela cierre automático
+              onMouseLeave={handleMouseLeave} // Inicia cierre con delay
+            >
               <NavDropdown.Item href="/brands/celestial" className="navbar-item">Celestial</NavDropdown.Item>
               <NavDropdown.Item href="/brands/capannoli" className="navbar-item">Capannoli</NavDropdown.Item>
               <NavDropdown.Item href="/brands/fidelli" className="navbar-item">Fidelli</NavDropdown.Item>
             </NavDropdown>
+
             <Nav.Link href="/faq" className="navbar-link">Preguntas Frecuentes</Nav.Link>
             <Nav.Link href="/about" className="navbar-link">Sobre Nosotros</Nav.Link>
-            <NavDropdown title={<span className="navbar-link">Contactos</span>} id="navbarScrollingDropdown">
+
+            {/* Dropdown para "Contactos" */}
+            <NavDropdown
+              title={<span className="navbar-link">Contactos</span>}
+              id="navbarScrollingDropdown2"
+              show={dropdownOpen === 'contactos'} // Controla si está abierto
+              onClick={() => handleDropdownClick('contactos')} // Se abre/cierra al hacer click
+              onMouseEnter={handleMouseEnter} // Cancela cierre automático
+              onMouseLeave={handleMouseLeave} // Inicia cierre con delay
+            >
               <NavDropdown.Item
                 href="https://api.whatsapp.com/send/?phone=5493515165078&text&type=phone_number&app_absent=0"
                 className="navbar-item"
