@@ -41,15 +41,15 @@ export const FeatureContainer = styled.div`
 `;
 
 export const FeatureP = styled.h1`
-	font-size: clamp(3rem, 4.5vw, 5rem);
+	font-size: clamp(3rem, 4.2vw, 5rem);
 	font-weight: bold;
 	word-break: break-word;
-	max-width: 70%; 
+	max-width: 60%; 
 	margin-bottom: 2.5rem;
 `;
 
 export const FeatureButton = styled.button`
-	font-size: 1.7rem;
+	font-size: 1.6rem;
 	padding: 0.6rem 3rem;
 	border: none;
 	background: #fd8b06;
