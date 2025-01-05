@@ -26,19 +26,6 @@ export const FeatureContainer = styled.div`
 	padding: 12rem 1rem; /* Espaciado interno arriba y abajo */
 	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 
-	h1 {
-	font-size: clamp(3rem, 5vw, 5rem);
-	font-weight: bold;
-	word-break: break-word;
-	max-width: 80%; 
-	margin-bottom: 2.5rem; /* Agrega más espacio debajo del h1 */
-	}
-
-
-	p {
-		margin-bottom: 1rem;
-		font-size: clamp(1rem, 3vw, 2rem);
-	}
 
 	/* Ajustes para pantallas medianas */
 	@media (max-width: 1000px) {
@@ -51,6 +38,14 @@ export const FeatureContainer = styled.div`
 		height: 35vh; /* Ajustado para pantallas pequeñas */
 		padding: 1.5rem 1rem; /* Espaciado más reducido para móviles */
 	}
+`;
+
+export const FeatureP = styled.h1`
+	font-size: clamp(2rem, 4vw, 5rem);
+	font-weight: bold;
+	word-break: break-word;
+	max-width: 80%; 
+	margin-bottom: 2.5rem;
 `;
 
 export const FeatureButton = styled.button`
