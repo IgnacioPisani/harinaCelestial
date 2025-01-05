@@ -58,3 +58,16 @@
   color: #fff !important;
   padding-left: 15px;
 }
+/* Clase para el navbar transparente */
+.navbar-transparent {
+  background-color: transparent !important;
+  transition: background-color 0.3s ease-in-out; /* Transición suave */
+  box-shadow: none; /* Sin sombra */
+}
+
+/* Clase para el navbar cuando se hace scroll */
+.navbar-scrolled {
+  background-color: #fd8b06 !important; /* Color naranja */
+  transition: background-color 0.3s ease-in-out; /* Transición suave */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra opcional */
+}

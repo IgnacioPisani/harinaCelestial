@@ -1,5 +1,5 @@
 import React from 'react';
-import { FeatureContainer, FeatureButton } from './FeatureElements';
+import { FeatureContainer, FeatureButton, FeatureP } from './FeatureElements';
 
 function Feature() {
     const handleClick = () => {
@@ -8,7 +8,7 @@ function Feature() {
 
     return (
         <FeatureContainer>
-            <h1>Venta de insumos para panadería</h1>
+            <FeatureP>Venta de insumos para panadería</FeatureP>
             {/* <p>Dejanos tu contacto</p> */}
             <FeatureButton onClick={handleClick}>
                 Envíanos tu consulta
