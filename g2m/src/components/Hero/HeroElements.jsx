@@ -55,11 +55,13 @@ export const Logo = styled.img.attrs({
 
   @media screen and (max-width: 768px) {
     width: 220px;
+     margin-bottom: 20px;
     padding: 15px; /* Ajusta el padding en pantallas más pequeñas */
   }
 
   @media screen and (max-width: 480px) {
     width: 140px;
+    margin-bottom: 1px;
     padding: 10px; /* Ajusta el padding en pantallas aún más pequeñas */
   }
 `;
@@ -84,26 +86,42 @@ export const HeroItems = styled.div`
   gap: 1rem;
 `;
 
-// Estilo para el texto del Hero
 export const HeroP = styled.p`
-  font-size: 1.3rem;
-  // font-weight: bold;
+  font-size: 1.5rem;
   color: white;
   text-transform: uppercase;
-  // text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Añade un efecto de sombra al texto */
   line-height: 1.5;
+  margin: 0; /* Elimina márgenes adicionales */
 
   /* Resalta las palabras específicas */
   span {
     color: #e67e00; /* Color naranja para las palabras resaltadas */
-    font-size: 1.6rem;
-  }
-
-  @media screen and (max-width: 768px) {
     font-size: 1.5rem;
+
+    @media screen and (max-width: 768px) {
+      font-size: 1.5rem;
+    }
+
+    @media screen and (max-width: 480px) {
+      font-size: 1rem;
+    }
+  }
+    @media screen and (max-width: 768px) {
+      font-size: 1.5rem;
+    }
+
+    @media screen and (max-width: 480px) {
+      font-size: 1rem;
+    }
+  /* Diseño para pantallas grandes */
+  @media screen and (min-width: 769px) {
+    display: inline; /* Coloca los textos en línea */
   }
 
-  @media screen and (max-width: 480px) {
-    font-size: 1rem;
+  /* Diseño para pantallas pequeñas */
+  @media screen and (max-width: 768px) {
+    display: block; /* Coloca los textos uno debajo del otro */
+    text-align: center; /* Opcional: centra el texto */
   }
 `;
+
