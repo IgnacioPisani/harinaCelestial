@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { useLocation } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -11,11 +12,15 @@ function NavbarResponsive() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(null); // Controla qué dropdown está abierto
   const closeTimeoutRef = useRef(null); // Referencia para controlar el temporizador
-
+  const location = useLocation();
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
-    };
+      if (window.scrollY > 50) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+        };
 
     window.addEventListener('scroll', handleScroll);
 
@@ -23,7 +28,7 @@ function NavbarResponsive() {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
-
+  const isNavbarScrolled = isScrolled || location.pathname !== '/';
   const handleDropdownClick = (id) => {
     clearTimeout(closeTimeoutRef.current); // Cancelar cualquier cierre pendiente
     setDropdownOpen((prev) => (prev === id ? null : id)); // Alterna entre abrir y cerrar
@@ -44,7 +49,7 @@ function NavbarResponsive() {
   return (
     <Navbar
       expand="lg"
-      className={`fixed-top custom-navbar ${isScrolled ? 'navbar-scrolled' : 'navbar-transparent'}`}
+      className={`fixed-top custom-navbar ${isNavbarScrolled ? 'navbar-scrolled' : ''}`}
     >
       <Container fluid className="px-0">
         <Navbar.Brand href="/" className="d-flex align-items-center">
