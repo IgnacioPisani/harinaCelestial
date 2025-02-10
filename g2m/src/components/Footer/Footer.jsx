@@ -25,7 +25,7 @@ function Footer() {
     {/* Logo centrado */}
     <FooterSection>
     <FooterContact><FaEnvelope />  contacto@g2mcelestial.com</FooterContact>
-    <FooterContact><FaPhoneAlt /> +54 9 351 123 4567</FooterContact>
+    <FooterContact><FaPhoneAlt /> +54 9 351 516 5078</FooterContact>
     </FooterSection>
 
     {/* Sección derecha */}
