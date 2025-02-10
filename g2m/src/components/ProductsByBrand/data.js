@@ -57,6 +57,10 @@ import CelestialBastones from '../../images/celestial/galletas/bastones.webp';
 import CelestialChips from '../../images/celestial/galletas/cookies-chips.webp';
 import CelestialLogo from '../../images/logos-brands/celestial.webp';
 
+import SalvadoTrigo from '../../images/celestial/subproductos/salvado-trigo.webp';
+import SemitaTrigo from '../../images/celestial/subproductos/semita-trigo.webp';
+import AfrechilloTrigo from '../../images/celestial/subproductos/afrechillo-trigo.webp';
+
 export const data = [
   {
     name: "Capannoli",
@@ -119,6 +123,14 @@ export const data = [
           { name: "Harina 000 Preparada", img: CelestialHI000preparada, specifications: "Harina formulada para panificación con fermentación larga, ideal para pan francés y miñón." },
           { name: "Harina 0000", img: CelestialHI0000, specifications: "Harina de alto refinamiento, ideal para pastas frescas y panadería de bollería." },
         ],
+      },
+      {
+        name: "Subproductos",
+        products: [
+          { name: "Salvado de Trigo", img: SalvadoTrigo, specifications: "Para elaboración de productos de panificación con alto contenido de fibra. \nPresentación: Bolsas de 20 kg." },
+          { name: "Semita de Trigo", img: SemitaTrigo, specifications: "Sub Producto para consumo animal con aporte de fibra destinado a la elaboración de dietas animales (cerdos). \nPresentación: Bolsas de 40 kg." },
+          { name: "Afrechillo de Trigo", img: AfrechilloTrigo, specifications: "Sub Producto para consumo animal con aporte de fibra destinado a la alimentación de ganado vacuno y aves. \nPresentación: Bolsas de 25 kg." },
+          ],
       },
       {
         name: "Harinas",
