@@ -96,14 +96,14 @@ export const HeroP = styled.p`
   /* Resalta las palabras específicas */
   span {
     color: #e67e00; /* Color naranja para las palabras resaltadas */
-    font-size: 1.5rem;
+    font-size: 1.8rem;
 
     @media screen and (max-width: 768px) {
-      font-size: 1.5rem;
+      font-size: 1.8rem;
     }
 
     @media screen and (max-width: 480px) {
-      font-size: 1rem;
+      font-size: 1.2rem;
     }
   }
     @media screen and (max-width: 768px) {

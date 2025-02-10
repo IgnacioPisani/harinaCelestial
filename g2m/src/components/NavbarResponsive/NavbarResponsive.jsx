@@ -80,10 +80,12 @@ function NavbarResponsive() {
 
             <Nav.Link href="/faq" className="navbar-link">Preguntas Frecuentes</Nav.Link>
             <Nav.Link href="/about" className="navbar-link">Sobre Nosotros</Nav.Link>
+            <Nav.Link href="https://forms.gle/jLZ5KAZtkUi2HnWS8"    target="_blank"
+                rel="noopener noreferrer" className="navbar-link">Contacto</Nav.Link>
 
             {/* Dropdown para "Contactos" */}
             <NavDropdown
-              title={<span className="navbar-link">Contactos</span>}
+              title={<span className="navbar-link">Redes</span>}
               id="navbarScrollingDropdown2"
               show={dropdownOpen === 'contactos'} // Controla si está abierto
               onClick={() => handleDropdownClick('contactos')} // Se abre/cierra al hacer click
