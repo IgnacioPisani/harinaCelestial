@@ -11,7 +11,7 @@ export const productData = [
 	{
 		img: tripleCero,
 		alt: 'Harina',
-		name: 'Harina 000 Standard',
+		name: 'Harina 000 Estandarizada',
 		link: '/brands/celestial'
 	},
 	{
