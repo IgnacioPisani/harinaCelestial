@@ -3,7 +3,7 @@ import { FeatureContainer, FeatureButton, FeatureP } from './FeatureElements';
 
 function Feature() {
     const handleClick = () => {
-        window.open('https://forms.gle/jLZ5KAZtkUi2HnWS8', '_blank', 'noopener noreferrer');
+        window.open('https://forms.gle/W4ijzR7bp1ERAgPT7', '_blank', 'noopener noreferrer');
     };
 
     return (

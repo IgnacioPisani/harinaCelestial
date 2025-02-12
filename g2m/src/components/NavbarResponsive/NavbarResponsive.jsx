@@ -80,7 +80,7 @@ function NavbarResponsive() {
 
             <Nav.Link href="/faq" className="navbar-link">Preguntas Frecuentes</Nav.Link>
             <Nav.Link href="/about" className="navbar-link">Sobre Nosotros</Nav.Link>
-            <Nav.Link href="https://forms.gle/jLZ5KAZtkUi2HnWS8"    target="_blank"
+            <Nav.Link href="https://forms.gle/W4ijzR7bp1ERAgPT7"    target="_blank"
                 rel="noopener noreferrer" className="navbar-link">Contacto</Nav.Link>
 
             {/* Dropdown para "Contactos" */}

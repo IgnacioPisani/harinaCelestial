@@ -29,6 +29,7 @@ import CelestialHI0000 from '../../images/celestial/harinas-industriales/h0000.w
 import CelestialHI000plus from '../../images/celestial/harinas-industriales/h000plus.webp';
 import CelestialHI000premium from '../../images/celestial/harinas-industriales/h000premium.webp';
 import CelestialHI000preparada from '../../images/celestial/harinas-industriales/h000preparada.webp';
+import CelestialIntegral from '../../images/celestial/harinas-industriales/hintegral.webp';
 import CelestialH000 from '../../images/celestial/harinas/h000.webp';
 import CelestialH0000 from '../../images/celestial/harinas/h0000.webp';
 import CelestialHleudante from '../../images/celestial/harinas/hleudante.webp';
@@ -117,11 +118,12 @@ export const data = [
       {
         name: "Harinas Industriales",
         products: [
-          { name: "Harina 000 Standard", img: CelestialHI000, specifications: "Harina mínimamente aditivada, adecuada para la elaboración de galletería dulce, tapas de alfajor, y masas batidas." },
-          { name: "Harina 000", img: CelestialHI000plus, specifications: "Harina para panificación convencional, adecuada para fermentación larga. Requiere agregado de aditivo." },
-          { name: "Harina 000 Premium", img: CelestialHI000premium, specifications: "Harina de alta refinación, ideal para panes de miga blanca y bollería especial." },
-          { name: "Harina 000 Preparada", img: CelestialHI000preparada, specifications: "Harina formulada para panificación con fermentación larga, ideal para pan francés y miñón." },
-          { name: "Harina 0000", img: CelestialHI0000, specifications: "Harina de alto refinamiento, ideal para pastas frescas y panadería de bollería." },
+          { name: "Harina 000 Estandarizada", img: CelestialHI000, specifications: "Harina mínimamente aditivada, adecuada para la elaboración de galletería dulce, tapas de alfajor, y masas batidas. Presentación: Bolsa de 25kg." },
+          { name: "Harina 000", img: CelestialHI000plus, specifications: "Harina para panificación convencional, adecuada para fermentación larga. Requiere agregado de aditivo. Presentación: Bolsa de 25kg." },
+          { name: "Harina 000 Premium", img: CelestialHI000premium, specifications: "Harina de alta refinación, ideal para panes de miga blanca y bollería especial. Presentación: Bolsa de 25kg." },
+          { name: "Harina 000 Preparada", img: CelestialHI000preparada, specifications: "Harina formulada para panificación con fermentación larga, ideal para pan francés y miñón. Presentación: Bolsa de 25kg." },
+          { name: "Harina 0000", img: CelestialHI0000, specifications: "Harina de alto refinamiento, ideal para pastas frescas y panadería de bollería. Presentación: Bolsa de 25kg." },
+          { name: "Harina Integral", img: CelestialIntegral, specifications: "Harina de alto contenido de fibra, ideal para la elaboración de productos saludables. Presentación: Bolsa de 25kg." },
         ],
       },
       {
