@@ -11,7 +11,7 @@ function Feature() {
             <FeatureP>Venta de insumos para panadería</FeatureP>
             {/* <p>Dejanos tu contacto</p> */}
             <FeatureButton onClick={handleClick}>
-                Envíanos tu consulta
+             Comuníquese con nosotros
             </FeatureButton>
         </FeatureContainer>
     );

@@ -108,6 +108,14 @@ function NavbarResponsive() {
               >
                 Instagram
               </NavDropdown.Item>
+              <NavDropdown.Item
+                href="https://www.facebook.com/profile.php?id=61564028819748&mibextid=ZbWKwL"
+                className="navbar-item"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Facebook
+              </NavDropdown.Item>
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>

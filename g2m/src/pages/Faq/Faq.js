@@ -4,7 +4,7 @@ import './Faq.css';
 const faqData = [
   {
     question: "¿Hacen envíos?",
-    answer: "Si, hacemos envíos a toda Córdoba, nosotros nos enfocamos en el centro y alrededores, pero también llega al interior. Consulta por tu caso puntual!",
+    answer: "Si, hacemos envíos a toda Córdoba, nos enfocamos en el centro y alrededores, pero también llegamos al interior. Consulta por tu caso puntual.",
   },
   {
     question: "¿Cada cuánto hacen envios?",
@@ -12,11 +12,11 @@ const faqData = [
   },
   {
     question: "¿Cuál es la compra mínima?",
-    answer: "La compra mínima es de 40 o 50 bolsas, pero en casos particulares se puede llegar hasta 30. No dudes en consultar por tu caso puntual!",
+    answer: "La compra mínima es de 40 bolsas, pero no dudes en consultar por tu caso puntual.",
   },
   {
-    question: "¿Como puedo comprar si no llego al mínimo de compra?",
-    answer: "Tenemos revendedores en distintos puntos de Córdoba que podrán hacer ventas por menor cantidad. No dudes en pedirnos los contactos!",
+    question: "¿Cómo puedo comprar si no llego al mínimo de compra?",
+    answer: "Tenemos revendedores en distintos puntos de Córdoba que podrán hacer ventas por menor cantidad. No dudes en pedirnos los contactos.",
   },
   {
     question: "¿Tienen un espacio físico para retirar productos?",

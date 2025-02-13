@@ -1,6 +1,6 @@
 import React from 'react';
 import Logo from '../../images/logo-g2m/g2m-transparente.webp';
-import { FaInstagram, FaWhatsapp,FaEnvelope,FaPhoneAlt } from 'react-icons/fa';
+import { FaInstagram, FaWhatsapp, FaFacebook, FaEnvelope,FaPhoneAlt } from 'react-icons/fa';
 import {
   FooterContainer,
   FooterWrap,
@@ -46,6 +46,14 @@ function Footer() {
           rel="noopener noreferrer"
         >
           <FaInstagram />
+        </SocialIconLink>
+        <SocialIconLink
+          href="https://www.facebook.com/profile.php?id=61564028819748&mibextid=ZbWKwL"
+          target="_blank"
+          aria-label="Facebook"
+          rel="noopener noreferrer"
+        >
+          <FaFacebook />
         </SocialIconLink>
       </FooterIcons>
     </FooterSection>

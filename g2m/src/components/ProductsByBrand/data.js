@@ -119,7 +119,7 @@ export const data = [
         name: "Harinas Industriales",
         products: [
           { name: "Harina 000 Estandarizada", img: CelestialHI000, specifications: "Harina mínimamente aditivada, adecuada para la elaboración de galletería dulce, tapas de alfajor, y masas batidas. Presentación: Bolsa de 25kg." },
-          { name: "Harina 000", img: CelestialHI000plus, specifications: "Harina para panificación convencional, adecuada para fermentación larga. Requiere agregado de aditivo. Presentación: Bolsa de 25kg." },
+          { name: "Harina 000", img: CelestialHI000plus, specifications: "Harina para panificación convencional, adecuada para fermentación larga. Presentación: Bolsa de 25kg." },
           { name: "Harina 000 Premium", img: CelestialHI000premium, specifications: "Harina de alta refinación, ideal para panes de miga blanca y bollería especial. Presentación: Bolsa de 25kg." },
           { name: "Harina 000 Preparada", img: CelestialHI000preparada, specifications: "Harina formulada para panificación con fermentación larga, ideal para pan francés y miñón. Presentación: Bolsa de 25kg." },
           { name: "Harina 0000", img: CelestialHI0000, specifications: "Harina de alto refinamiento, ideal para pastas frescas y panadería de bollería. Presentación: Bolsa de 25kg." },
@@ -164,7 +164,7 @@ export const data = [
           { name: "Garbanzos", img: CelestialGarbanzos, specifications: "Legumbres secas Garbanzos." },
           { name: "Lentejas", img: CelestialLentejas, specifications: "Legumbres secas Lentejas." },
           { name: "Porotos", img: CelestialPorotos, specifications: "Legumbres secas Porotos." },
-          { name: "Pisingallo", img: CelestialPisingallo, specifications: "Maíz Pisingallo Popcorn." },
+          { name: "Maíz Pisingallo", img: CelestialPisingallo, specifications: "Maíz Pisingallo Popcorn." },
         ],
       },
       {

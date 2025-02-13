@@ -36,7 +36,7 @@ const AboutUs = () => {
         <div className="about-us-text">
           <h2 className="about-us-title">Sobre Nosotros</h2>
           <p>
-            Representamos con orgullo a Molinos Río Segundo, especializándonos en la venta de harina y productos masivos para soluciones industriales y de consumo final.
+            Representamos con orgullo a Molinos Río Segundo, especializándonos en la venta de harina y productos masivos.
           </p>
         </div>
         <img src={nosotros} alt="Harina Industrial" className="about-us-image" />
